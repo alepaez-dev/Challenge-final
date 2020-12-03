@@ -31,13 +31,23 @@
                 text-align: left;
                 .btn-feed-flecha {
                     position: absolute;
-                    left: 70%;
+                    left: 80%;
                 }
+            }
+            .navbar-mdsize {
+                width: 330px;
+                a {
+                    padding: 4px;
+                    font-size: 16px;
+                    color: black;
+                    text-decoration: none;
+                }
+                
             }
             .image-rayito {
                 font-size: 30px;
                 position: absolute;
-                right: 3%;
+                right: 2%;
                 top: 25%;
         }
     }
@@ -83,11 +93,15 @@
                 .botones-der {
                     width: 50%;
                     p {
+                        color: grey;
                         width: 60%;
                     }
                     .btn-save {
-                        width: 100px;
-                        height: 40px;
+                        background-color: rgb(209, 207, 207);
+                        border: none;
+                        border-radius: 7px;
+                        width: 70px;
+                        height: 30px;
                     }
                 }
             }
