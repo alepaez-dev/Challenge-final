@@ -54,10 +54,16 @@ body hr {
 }
 
 .seccion-main .a-navbar-der .navbar-mdsize a {
-  padding: 4px;
+  padding: 9px 4px 9px 4px;
   font-size: 16px;
   color: black;
   text-decoration: none;
+}
+
+.seccion-main .a-navbar-der .navbar-mdsize a:hover {
+  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.11);
+  border-bottom: 2px solid blue;
 }
 
 .seccion-main .a-navbar-der .image-rayito {
@@ -83,7 +89,14 @@ body hr {
 }
 
 .seccion-main .article-main {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 10px;
+}
+
+.seccion-main .article-main:hover {
+  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
 }
 
 .seccion-main .article-main .iconos-article .icono-article {
@@ -109,9 +122,17 @@ body hr {
   font-size: 11px;
 }
 
+.seccion-main .article-main .article-info .titulo-tags h3:hover {
+  color: blue;
+}
+
 .seccion-main .article-main .article-info .titulo-tags a {
   color: grey;
   text-decoration: none;
+}
+
+.seccion-main .article-main .article-info .titulo-tags a:hover {
+  color: black;
 }
 
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der {
@@ -123,12 +144,21 @@ body hr {
   width: 60%;
 }
 
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der p:hover {
+  color: black;
+}
+
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save {
   background-color: #d1cfcf;
   border: none;
   border-radius: 7px;
   width: 70px;
   height: 30px;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save:hover {
+  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
 }
 
 * {
@@ -187,10 +217,16 @@ body hr {
 }
 
 .seccion-main .a-navbar-der .navbar-mdsize a {
-  padding: 4px;
+  padding: 9px 4px 9px 4px;
   font-size: 16px;
   color: black;
   text-decoration: none;
+}
+
+.seccion-main .a-navbar-der .navbar-mdsize a:hover {
+  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.11);
+  border-bottom: 2px solid blue;
 }
 
 .seccion-main .a-navbar-der .image-rayito {
@@ -216,7 +252,14 @@ body hr {
 }
 
 .seccion-main .article-main {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 10px;
+}
+
+.seccion-main .article-main:hover {
+  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
 }
 
 .seccion-main .article-main .iconos-article .icono-article {
@@ -242,9 +285,17 @@ body hr {
   font-size: 11px;
 }
 
+.seccion-main .article-main .article-info .titulo-tags h3:hover {
+  color: blue;
+}
+
 .seccion-main .article-main .article-info .titulo-tags a {
   color: grey;
   text-decoration: none;
+}
+
+.seccion-main .article-main .article-info .titulo-tags a:hover {
+  color: black;
 }
 
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der {
@@ -256,11 +307,20 @@ body hr {
   width: 60%;
 }
 
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der p:hover {
+  color: black;
+}
+
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save {
   background-color: #d1cfcf;
   border: none;
   border-radius: 7px;
   width: 70px;
   height: 30px;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save:hover {
+  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
 }
 /*# sourceMappingURL=style.css.map */
