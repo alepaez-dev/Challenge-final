@@ -1,33 +1,56 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.imagen-aside-2 {
+  border: 2px solid purple;
 }
 
-.contenedor-fluido {
-  background-color: grey;
-  height: 100vh;
+.img-Aside {
+  border: 2px solid orangered;
 }
 
-.contenedor-fluido .row-primario {
-  height: 80%;
+.class-1sectionOfAside2 {
+  background-color: #eef0f1;
 }
 
-.contenedor-fluido .aside-1 {
-  background-color: red;
+.tam-letra-article {
+  font-size: 15px;
 }
 
-.contenedor-fluido .seccion-principal {
-  background-color: black;
+.tam-letra-p {
+  font-size: 10px;
 }
 
-.contenedor-fluido .aside-2 {
-  background-color: blue;
+.listings {
+  margin-top: 10px;
+  background-color: #eef0f1;
 }
 
-.contenedor-fluido .row-footer .container-fluido-footer {
-  height: 20%;
-  background-color: black;
+.listings-ul {
+  list-style-type: none;
+}
+
+.article {
+  background-color: #eef0f1;
+  border-bottom: 1px solid #fbfbfbb2;
+  padding: 5px;
+}
+
+.articlesNews {
+  margin-top: 10px;
+  background-color: #eef0f1;
+  border-radius: 10px;
+}
+
+.CreateListin {
+  margin-top: 10px;
+  background-color: #eef0f1;
+}
+
+.news-ul {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.btn-new {
+  border-radius: 7px;
+  height: 25px;
 }
 /*# sourceMappingURL=style.css.map */
