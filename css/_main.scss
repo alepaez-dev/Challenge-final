@@ -8,8 +8,9 @@
         .a-navbar{
             .image-coins{
                 position: absolute;
-                left:2%;
-                top: 30%;
+                left:1%;
+                top: 28%;
+                font-size: 25px;
             }
             .navbar-posts {
                 font-weight: bold;
@@ -21,7 +22,7 @@
             .btn-feed {
                 position: relative;
                 border: none;
-                border: 1px $btn-feed-border solid;
+                border:$btn-feed-border;
                 border-radius: 2px;
                 background-color:$btn-feed-bg;
                 color: black;
@@ -34,12 +35,46 @@
                 }
             }
             .image-rayito {
+                font-size: 30px;
                 position: absolute;
-                left:92%;
-                top: 30%;
+                right: 3%;
+                top: 25%;
         }
     }
     .imagen-main {
         align-self: center;
+        .imagen-principal {
+            width: 80%;
+            margin: auto;
+            align-self: center;
+        }
+    }
+
+    .article-main {
+        .iconos-article {
+            .icono-article {
+                width :40px;
+                border-radius: 20px;
+            }
+        }
+        .article-info {
+            .nombre-fecha{
+                color: $nombre-fecha-color;
+                .nombre-article{
+                    font-weight: bold;
+                    line-height: 0.3cm;
+                    font-size: 14px;
+                }
+                .fecha-article {
+                    font-size: 11px;
+                }
+            }
+            .titulo-tags {
+                a {
+                    color: grey;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }

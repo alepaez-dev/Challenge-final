@@ -16,8 +16,9 @@
 
 .seccion-main .a-navbar .image-coins {
   position: absolute;
-  left: 2%;
-  top: 30%;
+  left: 1%;
+  top: 28%;
+  font-size: 25px;
 }
 
 .seccion-main .a-navbar .navbar-posts {
@@ -43,15 +44,48 @@
 }
 
 .seccion-main .a-navbar-der .image-rayito {
+  font-size: 30px;
   position: absolute;
-  left: 92%;
-  top: 30%;
+  right: 3%;
+  top: 25%;
 }
 
 .seccion-main .imagen-main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.seccion-main .imagen-main .imagen-principal {
+  width: 80%;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.seccion-main .article-main .iconos-article .icono-article {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.seccion-main .article-main .article-info .nombre-fecha {
+  color: #504e4e;
+}
+
+.seccion-main .article-main .article-info .nombre-fecha .nombre-article {
+  font-weight: bold;
+  line-height: 0.3cm;
+  font-size: 14px;
+}
+
+.seccion-main .article-main .article-info .nombre-fecha .fecha-article {
+  font-size: 11px;
+}
+
+.seccion-main .article-main .article-info .titulo-tags a {
+  color: grey;
+  text-decoration: none;
 }
 
 * {
@@ -72,8 +106,9 @@
 
 .seccion-main .a-navbar .image-coins {
   position: absolute;
-  left: 2%;
-  top: 30%;
+  left: 1%;
+  top: 28%;
+  font-size: 25px;
 }
 
 .seccion-main .a-navbar .navbar-posts {
@@ -99,14 +134,47 @@
 }
 
 .seccion-main .a-navbar-der .image-rayito {
+  font-size: 30px;
   position: absolute;
-  left: 92%;
-  top: 30%;
+  right: 3%;
+  top: 25%;
 }
 
 .seccion-main .imagen-main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.seccion-main .imagen-main .imagen-principal {
+  width: 80%;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.seccion-main .article-main .iconos-article .icono-article {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.seccion-main .article-main .article-info .nombre-fecha {
+  color: #504e4e;
+}
+
+.seccion-main .article-main .article-info .nombre-fecha .nombre-article {
+  font-weight: bold;
+  line-height: 0.3cm;
+  font-size: 14px;
+}
+
+.seccion-main .article-main .article-info .nombre-fecha .fecha-article {
+  font-size: 11px;
+}
+
+.seccion-main .article-main .article-info .titulo-tags a {
+  color: grey;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
