@@ -59,14 +59,23 @@
 .seccion-main .imagen-main .imagen-principal {
   width: 80%;
   margin: auto;
+  padding: 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
+.seccion-main .article-main {
+  padding: 10px;
+}
+
 .seccion-main .article-main .iconos-article .icono-article {
   width: 40px;
   border-radius: 20px;
+}
+
+.seccion-main .article-main .article-info {
+  width: 100%;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha {
@@ -86,6 +95,19 @@
 .seccion-main .article-main .article-info .titulo-tags a {
   color: grey;
   text-decoration: none;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der {
+  width: 50%;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der p {
+  width: 60%;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save {
+  width: 100px;
+  height: 40px;
 }
 
 * {
@@ -149,14 +171,23 @@
 .seccion-main .imagen-main .imagen-principal {
   width: 80%;
   margin: auto;
+  padding: 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
+.seccion-main .article-main {
+  padding: 10px;
+}
+
 .seccion-main .article-main .iconos-article .icono-article {
   width: 40px;
   border-radius: 20px;
+}
+
+.seccion-main .article-main .article-info {
+  width: 100%;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha {
@@ -176,5 +207,18 @@
 .seccion-main .article-main .article-info .titulo-tags a {
   color: grey;
   text-decoration: none;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der {
+  width: 50%;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der p {
+  width: 60%;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save {
+  width: 100px;
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */

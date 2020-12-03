@@ -46,11 +46,13 @@
         .imagen-principal {
             width: 80%;
             margin: auto;
+            padding: 10px;
             align-self: center;
         }
     }
 
     .article-main {
+        padding: 10px;
         .iconos-article {
             .icono-article {
                 width :40px;
@@ -58,6 +60,7 @@
             }
         }
         .article-info {
+            width: 100%;
             .nombre-fecha{
                 color: $nombre-fecha-color;
                 .nombre-article{
@@ -73,6 +76,19 @@
                 a {
                     color: grey;
                     text-decoration: none;
+                }
+            }
+
+            .iconos-botones-article {
+                .botones-der {
+                    width: 50%;
+                    p {
+                        width: 60%;
+                    }
+                    .btn-save {
+                        width: 100px;
+                        height: 40px;
+                    }
                 }
             }
         }
