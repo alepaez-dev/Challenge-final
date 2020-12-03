@@ -8,7 +8,7 @@
 
 .aside-1 .sign-up li:hover {
   border-radius: 2px;
-  background-color: #f3efef;
+  background-color: #d3dadd;
   color: blue;
   padding: 5px;
 }
@@ -18,11 +18,18 @@
   padding: 5px;
 }
 
+.aside-1 .sign-up h3 {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .aside-1 .text-muted {
   font-size: 15px;
 }
 
 .aside-1 .text-muted p {
+  background-color: transparent;
   display: block;
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -47,17 +54,17 @@
 
 .aside-1 .popular-tags h3 svg:hover {
   margin: 0 0 0 50%;
-  background-color: #f3efef;
+  background-color: #d3dadd;
 }
 
 .aside-1 .popular-tags h3 svg {
   margin: 0 0 0 50%;
-  background-color: white;
+  background-color: transparent;
 }
 
 .aside-1 .popular-tags li:hover {
   border-radius: 2px;
-  background-color: #f3efef;
+  background-color: #d3dadd;
   color: blue;
   padding: 5px;
 }
@@ -72,6 +79,7 @@
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #EEF0F1;
 }
 
 body hr {
