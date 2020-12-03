@@ -5,29 +5,108 @@
           box-sizing: border-box;
 }
 
-.contenedor-fluido {
-  background-color: grey;
-  height: 100vh;
+.seccion-main {
+  background-color: white;
 }
 
-.contenedor-fluido .row-primario {
-  height: 80%;
+.seccion-main .navbar {
+  position: relative;
+  background-color: #eee6e6;
 }
 
-.contenedor-fluido .aside-1 {
-  background-color: red;
+.seccion-main .a-navbar .image-coins {
+  position: absolute;
+  left: 2%;
+  top: 30%;
 }
 
-.contenedor-fluido .seccion-principal {
-  background-color: black;
+.seccion-main .a-navbar .navbar-posts {
+  font-weight: bold;
+  color: black;
 }
 
-.contenedor-fluido .aside-2 {
-  background-color: blue;
+.seccion-main .a-navbar-der .btn-feed {
+  position: relative;
+  border: none;
+  border: 1px #9b9b9b solid;
+  border-radius: 2px;
+  background-color: #f0eaea;
+  color: black;
+  width: 100px;
+  height: 40px;
+  text-align: left;
 }
 
-.contenedor-fluido .row-footer .container-fluido-footer {
-  height: 20%;
-  background-color: black;
+.seccion-main .a-navbar-der .btn-feed .btn-feed-flecha {
+  position: absolute;
+  left: 70%;
+}
+
+.seccion-main .a-navbar-der .image-rayito {
+  position: absolute;
+  left: 92%;
+  top: 30%;
+}
+
+.seccion-main .imagen-main {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.seccion-main {
+  background-color: white;
+}
+
+.seccion-main .navbar {
+  position: relative;
+  background-color: #eee6e6;
+}
+
+.seccion-main .a-navbar .image-coins {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+}
+
+.seccion-main .a-navbar .navbar-posts {
+  font-weight: bold;
+  color: black;
+}
+
+.seccion-main .a-navbar-der .btn-feed {
+  position: relative;
+  border: none;
+  border: 1px #9b9b9b solid;
+  border-radius: 2px;
+  background-color: #f0eaea;
+  color: black;
+  width: 100px;
+  height: 40px;
+  text-align: left;
+}
+
+.seccion-main .a-navbar-der .btn-feed .btn-feed-flecha {
+  position: absolute;
+  left: 70%;
+}
+
+.seccion-main .a-navbar-der .image-rayito {
+  position: absolute;
+  left: 92%;
+  top: 30%;
+}
+
+.seccion-main .imagen-main {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */

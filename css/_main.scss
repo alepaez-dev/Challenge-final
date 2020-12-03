@@ -1,0 +1,45 @@
+.seccion-main {
+    background-color: white;
+    .navbar {
+        position: relative;
+        background-color:$navbar-color;
+        }
+
+        .a-navbar{
+            .image-coins{
+                position: absolute;
+                left:2%;
+                top: 30%;
+            }
+            .navbar-posts {
+                font-weight: bold;
+                color: black;
+            }
+        }
+
+        .a-navbar-der {
+            .btn-feed {
+                position: relative;
+                border: none;
+                border: 1px $btn-feed-border solid;
+                border-radius: 2px;
+                background-color:$btn-feed-bg;
+                color: black;
+                width: 100px;
+                height: 40px;
+                text-align: left;
+                .btn-feed-flecha {
+                    position: absolute;
+                    left: 70%;
+                }
+            }
+            .image-rayito {
+                position: absolute;
+                left:92%;
+                top: 30%;
+        }
+    }
+    .imagen-main {
+        align-self: center;
+    }
+}
