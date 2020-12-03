@@ -1,33 +1,69 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.aside-1 img {
+  width: 100%;
 }
 
-.contenedor-fluido {
-  background-color: grey;
-  height: 100vh;
+.aside-1 .sign-up {
+  list-style: none;
 }
 
-.contenedor-fluido .row-primario {
-  height: 80%;
+.aside-1 .sign-up li:hover {
+  border-radius: 2px;
+  background-color: #f3efef;
+  color: blue;
+  padding: 5px;
 }
 
-.contenedor-fluido .aside-1 {
-  background-color: red;
+.aside-1 .sign-up li {
+  color: black;
+  padding: 5px;
 }
 
-.contenedor-fluido .seccion-principal {
-  background-color: black;
+.aside-1 .text-muted {
+  font-size: 15px;
 }
 
-.contenedor-fluido .aside-2 {
-  background-color: blue;
+.aside-1 .text-muted p {
+  display: block;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  padding-left: 20%;
 }
 
-.contenedor-fluido .row-footer .container-fluido-footer {
-  height: 20%;
-  background-color: black;
+.aside-1 .popular-tags {
+  list-style: none;
+}
+
+.aside-1 .popular-tags h3 {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.aside-1 .popular-tags h3 svg:hover {
+  margin: 0 0 0 50%;
+  background-color: #f3efef;
+}
+
+.aside-1 .popular-tags h3 svg {
+  margin: 0 0 0 50%;
+  background-color: white;
+}
+
+.aside-1 .popular-tags li:hover {
+  border-radius: 2px;
+  background-color: #f3efef;
+  color: blue;
+  padding: 5px;
+}
+
+.aside-1 .popular-tags li {
+  color: black;
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */
