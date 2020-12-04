@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  overflow-x: auto;
+}
+
 body {
   background-color: #EEF0F1;
 }
@@ -47,6 +51,7 @@ header .container nav ul li {
 }
 
 header .container nav ul li a {
+  padding: 5px;
   width: 1px;
   height: 1px;
   visibility: hidden;
@@ -166,6 +171,7 @@ header.sticky {
   border: 1px solid #ccc7c7;
   border-radius: 5px;
   background-color: white;
+  text-align: justify;
 }
 
 .seccion-main .navbar {
@@ -248,9 +254,14 @@ header.sticky {
   padding: 10px;
 }
 
-.seccion-main .article-main:hover {
-  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
+.seccion-main .article-main .titulo-tags a {
+  color: grey;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.seccion-main .article-main .titulo-tags a:hover {
+  color: black;
 }
 
 .seccion-main .article-main .iconos-article .icono-article {
@@ -274,19 +285,6 @@ header.sticky {
 
 .seccion-main .article-main .article-info .nombre-fecha .fecha-article {
   font-size: 11px;
-}
-
-.seccion-main .article-main .article-info .titulo-tags h3:hover {
-  color: blue;
-}
-
-.seccion-main .article-main .article-info .titulo-tags a {
-  color: grey;
-  text-decoration: none;
-}
-
-.seccion-main .article-main .article-info .titulo-tags a:hover {
-  color: black;
 }
 
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der {
@@ -343,16 +341,48 @@ header.sticky {
   border-left: 10px solid grey;
 }
 
+a#h-web {
+  background-color: black;
+  color: pink;
+}
+
+a#h-software {
+  background-color: blue;
+  color: yellow;
+}
+
+a#h-improvement {
+  background-color: #8fb68d;
+  color: black;
+}
+
+a#h-kidding {
+  background-color: #009999;
+  color: white;
+}
+
+a#h-sad {
+  background-color: #742121;
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
   .seccion-main .article-main {
     text-align: center;
+  }
+  .seccion-main .article-main .titulo-tags a {
+    padding: 5px 10px 5px 10px;
   }
   .seccion-main .article-main .article-info {
     margin: auto;
   }
 }
 
-.aside-1 {
+.div-aside-principal {
+  max-width: 70px;
+}
+
+.div-aside-principal .aside-1 {
   position: -webkit-sticky;
   position: sticky;
   top: 50px;
@@ -361,11 +391,11 @@ header.sticky {
   width: 100%;
 }
 
-.aside-1 .div-aside-1 {
+.div-aside-principal .aside-1 .div-aside-1 {
   height: 100vh;
 }
 
-.aside-1 .div-aside-1 .iconos-aside-1 .svgs {
+.div-aside-principal .aside-1 .div-aside-1 .iconos-aside-1 .svgs {
   opacity: 0.7;
 }
 
