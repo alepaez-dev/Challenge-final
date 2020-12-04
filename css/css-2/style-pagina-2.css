@@ -253,7 +253,7 @@ header.sticky {
   color: grey;
   text-decoration: none;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
 }
 
 .seccion-main .article-main .titulo-tags a:hover {
