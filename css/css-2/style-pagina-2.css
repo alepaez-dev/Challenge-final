@@ -1,7 +1,191 @@
 * {
   padding: 0px;
   margin: 0px;
-  -webkit-box-sizing: 0px;
-          box-sizing: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body hr {
+  width: 95%;
+  margin: auto;
+  border: 1px solid #bbbaba;
+}
+
+.seccion-main {
+  background-color: white;
+}
+
+.seccion-main .navbar {
+  position: relative;
+  background-color: #eee6e6;
+}
+
+.seccion-main .a-navbar .image-coins {
+  position: absolute;
+  left: 1%;
+  top: 28%;
+  font-size: 25px;
+}
+
+.seccion-main .a-navbar .navbar-posts {
+  font-weight: bold;
+  color: black;
+}
+
+.seccion-main .a-navbar-der .btn-feed {
+  position: relative;
+  border: none;
+  border: 1px #9b9b9b solid;
+  border-radius: 2px;
+  background-color: #f0eaea;
+  color: black;
+  width: 100px;
+  height: 40px;
+  text-align: left;
+}
+
+.seccion-main .a-navbar-der .btn-feed .btn-feed-flecha {
+  position: absolute;
+  left: 80%;
+}
+
+.seccion-main .a-navbar-der .navbar-mdsize {
+  width: 330px;
+}
+
+.seccion-main .a-navbar-der .navbar-mdsize a {
+  padding: 9px 4px 9px 4px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.seccion-main .a-navbar-der .navbar-mdsize a:hover {
+  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.11);
+  border-bottom: 2px solid blue;
+}
+
+.seccion-main .a-navbar-der .image-rayito {
+  font-size: 30px;
+  position: absolute;
+  right: 2%;
+  top: 25%;
+}
+
+.seccion-main .imagen-main {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.seccion-main .imagen-main .imagen-principal {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.seccion-main .article-main {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+.seccion-main .article-main:hover {
+  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
+}
+
+.seccion-main .article-main .iconos-article .icono-article {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.seccion-main .article-main .article-info {
+  width: 100%;
+}
+
+.seccion-main .article-main .article-info .nombre-fecha {
+  color: #504e4e;
+}
+
+.seccion-main .article-main .article-info .nombre-fecha .nombre-article {
+  font-weight: bold;
+  line-height: 0.3cm;
+  font-size: 14px;
+}
+
+.seccion-main .article-main .article-info .nombre-fecha .fecha-article {
+  font-size: 11px;
+}
+
+.seccion-main .article-main .article-info .titulo-tags h3:hover {
+  color: blue;
+}
+
+.seccion-main .article-main .article-info .titulo-tags a {
+  color: grey;
+  text-decoration: none;
+}
+
+.seccion-main .article-main .article-info .titulo-tags a:hover {
+  color: black;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der {
+  width: 50%;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der p {
+  color: grey;
+  width: 60%;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der p:hover {
+  color: black;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save {
+  background-color: #d1cfcf;
+  border: none;
+  border-radius: 7px;
+  width: 70px;
+  height: 30px;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save:hover {
+  -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
+}
+
+.seccion-main .article-main .parrafo-article-2 .parrafo-cursiva {
+  font-size: 14px;
+  color: #807e7e;
+}
+
+.seccion-main .article-main .parrafo-article-2 .parrafo-cursiva strong {
+  color: #3b3b97;
+}
+
+.seccion-main .info-article {
+  padding: 20px;
+}
+
+.seccion-main .info-article .imagenes-pag-2 {
+  padding: 0px;
+  width: 100%;
+}
+
+.seccion-main .info-article .imagen-bot {
+  font-size: 12px;
+  color: grey;
+  font-style: italic;
+}
+
+.seccion-main .info-article .parrafo-izq-border {
+  border-left: 10px solid grey;
 }
 /*# sourceMappingURL=style-pagina-2.css.map */
