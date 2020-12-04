@@ -244,7 +244,7 @@ header {
 }
 
 header .container {
-  background-color: white;
+  background-color: yellow;
 }
 
 header .container nav {
@@ -334,12 +334,11 @@ header .container section input {
     background-color: white;
   }
   header .container nav ul li a {
-    background-color: purple;
     font-weight: bold;
     margin-top: 2px;
     text-align: center;
     width: 140px;
-    height: 40px;
+    height: 35px;
     visibility: visible;
   }
   header .container nav ul li img {
