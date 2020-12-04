@@ -5,11 +5,11 @@
         //z-index: 4;
     
     background-color: #EEF0F1;
-    height: 100vh;
+    height: 100px;
     width: 100%;
 
    .div-aside-1{
-    height: 60vh;
+    height: 100vh;
        .iconos-aside-1{
             .svgs {
                opacity: 0.7;
@@ -20,13 +20,9 @@
 
 @media only screen and(max-width:768px) {
     .aside-abajo {
-        position: fixed;
-        //height: 500px;
-        top: 965px;
-        height: 8vh;
-        width: 100%;
+        height: 100%;
         .div-aside-1 {
-            height: 8vh;
+            margin-top: 15px;
         }
     }
 }
