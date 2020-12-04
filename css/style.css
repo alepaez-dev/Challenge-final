@@ -334,6 +334,15 @@ header .container nav ul li {
   background-color: white;
 }
 
+header .container nav ul li .nav-item.show element.style {
+  position: absolute;
+  -webkit-transform: translate3d(758px, 50px, 0px);
+          transform: translate3d(758px, 50px, 0px);
+  top: 0px;
+  left: -100px;
+  will-change: transform;
+}
+
 header .container nav ul li a {
   width: 1px;
   height: 1px;
@@ -341,8 +350,6 @@ header .container nav ul li a {
 }
 
 header .container nav ul li img:hover {
-  -webkit-box-shadow: black;
-          box-shadow: black;
   margin: 10px 5px 0 5px;
   background-color: white;
 }

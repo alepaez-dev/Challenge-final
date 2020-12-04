@@ -15,11 +15,27 @@ header {
             justify-content: space-between;
 
             ul {
+
                 display: flex;
                 padding-top: 10px;
                 background-color: white;
 
                 li {
+                    .nav-item.show {
+
+                        element.style {
+                            position: absolute;
+                            transform: translate3d(758px, 50px, 0px);
+                            top: 0px;
+                            left: -100px;
+                            will-change: transform;
+                        }
+
+                    }
+
+
+
+
                     a {
 
                         width: 1px;
@@ -31,19 +47,21 @@ header {
                     background-color: white;
 
                     img:hover {
-                        box-shadow: black;
+
                         margin: 10px 5px 0 5px;
                         background-color: white;
                     }
+
                     img {
-                        
+
                         margin: 10px 5px 0 5px;
                         background-color: white;
                     }
+
                     img#dropdownMenuButton {
                         border-radius: 50px;
                         width: 30px;
-                        
+
                     }
 
                     img.redondeado {
@@ -84,15 +102,16 @@ header {
         }
 
     }
-    
+
 
 }
+
 header.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 4;
-    
+
 }
 
 @media only screen and (min-width:768px) {
@@ -178,7 +197,7 @@ header.sticky {
         position: sticky;
         top: 0;
         z-index: 4;
-        
+
     }
 
 }
