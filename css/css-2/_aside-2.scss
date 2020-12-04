@@ -1,0 +1,68 @@
+.aside-derecha {
+    height: 100vh;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    .div-1-aside-2 {
+        width: 95%;
+        margin: auto;
+        background-color: #F9FAFA;
+        border: 1px solid rgb(231, 225, 225);
+        border-radius: 6px;
+        //height: 50%;
+        .cuadro-negro {
+            background-color: black;
+            width: 100%;
+            height: 40px;
+        }
+        .foto-nombre {
+            position: relative;
+            .foto-aside-der {
+                position: absolute;
+                top:-50%;
+                left: 5%;
+                width: 50px;
+                border-radius: 50px;
+            }
+            h5 {
+                font-weight: bold;
+                margin-top: 5px;
+                margin-left: 70px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            color: grey;
+        }
+
+        .btn-follow {
+            width: 90%;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(37, 37, 131);
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .aside-der-info {
+            .info {
+                h5 {
+                    font-family: 'Castoro', serif;
+                    font-size: 16px;
+                    color: rgb(77, 75, 75);
+                }
+                p {
+                    line-height: 0.6cm;
+                    font-size: 17px;
+                    color: black;
+                }
+            }
+
+        }
+    }
+    
+}
