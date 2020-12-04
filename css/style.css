@@ -237,4 +237,138 @@ body hr {
   -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
 }
+
+header {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+header .container {
+  background-color: white;
+}
+
+header .container nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  background-color: white;
+}
+
+header .container nav ul li {
+  background-color: white;
+}
+
+header .container nav ul li a {
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
+
+header .container nav ul li img {
+  margin: 10px 5px 0 5px;
+  background-color: white;
+}
+
+header .container nav ul li img.redondeado {
+  margin-top: 7px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+header .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  background-color: white;
+  width: 55%;
+}
+
+header .container section input:hover {
+  border: 1px solid #a1a1a1;
+  background-color: #fbfbfb;
+  margin: 2px 0 0 15px;
+  padding-left: 5px;
+}
+
+header .container section input {
+  background-color: #fbfbfb;
+  margin: 2px 0 0 15px;
+  padding-left: 5px;
+  width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  header .container {
+    background-color: white;
+  }
+  header .container nav {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .container nav ul {
+    padding-top: 10px;
+    background-color: white;
+  }
+  header .container nav ul li {
+    background-color: white;
+  }
+  header .container nav ul li a {
+    font-weight: bold;
+    margin-top: 2px;
+    text-align: center;
+    width: 140px;
+    height: 35px;
+    visibility: visible;
+  }
+  header .container nav ul li img {
+    margin: 10px 5px 0 5px;
+    background-color: white;
+  }
+  header .container nav ul li img.redondeado {
+    margin-top: 7px;
+    height: 30px;
+    border-radius: 100%;
+  }
+  header .container section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10px;
+    background-color: white;
+    width: 60%;
+  }
+  header .container section input:hover {
+    border: 1px solid #a1a1a1;
+    background-color: #fbfbfb;
+    margin: 2px 0 0 15px;
+    padding-left: 5px;
+  }
+  header .container section input {
+    background-color: #fbfbfb;
+    margin: 2px 0 0 15px;
+    padding-left: 5px;
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
