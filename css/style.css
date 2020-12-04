@@ -427,20 +427,54 @@ header.sticky {
   }
 }
 
-.imagen-aside-2 {
-  border: 2px solid purple;
+.aside2 img {
+  width: 110%;
 }
 
 .img-Aside {
-  border: 2px solid orangered;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.class-1sectionOfAside2 {
+  background-color: whitesmoke;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+.articles-aside-2 {
+  background-color: whitesmoke;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+.articlesNews {
+  background-color: whitesmoke;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+.articles-help {
+  background-color: whitesmoke;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+.articles-discuss {
+  background-color: whitesmoke;
+  border-radius: 7px;
+  margin-top: 10px;
 }
 
 .tam-letra-article {
-  font-size: 15px;
+  /*font-size:15px;*/
+  font-weight: bold;
 }
 
 .tam-letra-p {
   font-size: 10px;
+  margin-left: 10px;
 }
 
 .listings {
@@ -457,6 +491,8 @@ ul li.lista-aside-2 {
 
 ul li.lista-aside-2:hover {
   border-bottom: rgba(207, 207, 205, 0.89);
+  background-color: white;
+  color: #1818ad;
 }
 
 ul li.lista-aside-2:first-of-type {
