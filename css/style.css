@@ -159,6 +159,8 @@ body hr {
 }
 
 .seccion-main .imagen-main {
+  background-color: white;
+  border-radius: 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

@@ -5,13 +5,166 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #EEF0F1;
+}
+
 body hr {
   width: 95%;
   margin: auto;
   border: 1px solid #bbbaba;
 }
 
+header {
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+header .container {
+  background-color: white;
+}
+
+header .container nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  background-color: white;
+}
+
+header .container nav ul li {
+  background-color: white;
+}
+
+header .container nav ul li a {
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
+
+header .container nav ul li img {
+  margin: 10px 5px 0 5px;
+  background-color: white;
+}
+
+header .container nav ul li img.redondeado {
+  margin-top: 7px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+header .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  background-color: white;
+  width: 55%;
+}
+
+header .container section input:hover {
+  border: 1px solid #a1a1a1;
+  background-color: #fbfbfb;
+  margin: 2px 0 0 15px;
+  padding-left: 5px;
+}
+
+header .container section input {
+  background-color: #fbfbfb;
+  margin: 2px 0 0 15px;
+  padding-left: 5px;
+  width: 80%;
+}
+
+header.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-color: white;
+    padding-bottom: 10px;
+  }
+  header .container {
+    background-color: white;
+  }
+  header .container nav {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .container nav ul {
+    padding-top: 10px;
+    background-color: white;
+  }
+  header .container nav ul li {
+    background-color: white;
+  }
+  header .container nav ul li a {
+    font-weight: bold;
+    margin-top: 2px;
+    text-align: center;
+    width: 140px;
+    height: 35px;
+    visibility: visible;
+  }
+  header .container nav ul li img {
+    margin: 10px 5px 0 5px;
+    background-color: white;
+  }
+  header .container nav ul li img.redondeado {
+    margin-top: 7px;
+    height: 30px;
+    border-radius: 100%;
+  }
+  header .container section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10px;
+    background-color: white;
+    width: 60%;
+  }
+  header .container section input:hover {
+    border: 1px solid #a1a1a1;
+    background-color: #fbfbfb;
+    margin: 2px 0 0 15px;
+    padding-left: 5px;
+  }
+  header .container section input {
+    background-color: #fbfbfb;
+    margin: 2px 0 0 15px;
+    padding-left: 5px;
+    width: 80%;
+  }
+  header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+}
+
 .seccion-main {
+  border: 1px solid #ccc7c7;
+  border-radius: 5px;
   background-color: white;
 }
 
@@ -80,6 +233,7 @@ body hr {
 }
 
 .seccion-main .imagen-main .imagen-principal {
+  border: none;
   width: 100%;
   margin: auto;
   padding: 10px;
@@ -105,7 +259,7 @@ body hr {
 }
 
 .seccion-main .article-main .article-info {
-  width: 100%;
+  width: 60%;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha {
@@ -187,5 +341,50 @@ body hr {
 
 .seccion-main .info-article .parrafo-izq-border {
   border-left: 10px solid grey;
+}
+
+@media only screen and (min-width: 768px) {
+  .seccion-main .article-main {
+    text-align: center;
+  }
+  .seccion-main .article-main .article-info {
+    margin: auto;
+  }
+}
+
+.aside-1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  background-color: #EEF0F1;
+  height: 100px;
+  width: 100%;
+}
+
+.aside-1 .div-aside-1 {
+  height: 100vh;
+}
+
+.aside-1 .div-aside-1 .iconos-aside-1 .svgs {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px) {
+  .aside-abajo {
+    height: 100%;
+  }
+  .aside-abajo .div-aside-1 {
+    height: 10%;
+    margin-top: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #EEF0F1;
+  }
+  .aside-abajo .div-aside-1 .iconos-aside-1 {
+    height: 70%;
+  }
 }
 /*# sourceMappingURL=style-pagina-2.css.map */
