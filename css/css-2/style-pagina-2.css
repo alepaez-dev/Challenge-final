@@ -259,7 +259,7 @@ header.sticky {
 }
 
 .seccion-main .article-main .article-info {
-  width: 100%;
+  width: 60%;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha {
@@ -343,6 +343,15 @@ header.sticky {
   border-left: 10px solid grey;
 }
 
+@media only screen and (min-width: 768px) {
+  .seccion-main .article-main {
+    text-align: center;
+  }
+  .seccion-main .article-main .article-info {
+    margin: auto;
+  }
+}
+
 .aside-1 {
   position: -webkit-sticky;
   position: sticky;
@@ -365,7 +374,17 @@ header.sticky {
     height: 100%;
   }
   .aside-abajo .div-aside-1 {
+    height: 10%;
     margin-top: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #EEF0F1;
+  }
+  .aside-abajo .div-aside-1 .iconos-aside-1 {
+    height: 70%;
   }
 }
 /*# sourceMappingURL=style-pagina-2.css.map */

@@ -85,7 +85,7 @@
             }
         }
         .article-info {
-            width: 100%;
+            width: 60%;
             .nombre-fecha{
                 color: $nombre-fecha-color;
                 .nombre-article{
@@ -166,4 +166,16 @@
     }
 
 
+}
+
+@media only screen and(min-width:768px) {
+    .seccion-main{
+        .article-main {
+            text-align: center;
+            .article-info {
+                margin: auto;
+                //width: none;
+            }
+        }
+    }
 }

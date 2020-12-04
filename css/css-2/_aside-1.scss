@@ -22,7 +22,19 @@
     .aside-abajo {
         height: 100%;
         .div-aside-1 {
+            height: 10%;
             margin-top: 15px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #EEF0F1;
+            .iconos-aside-1 {
+                height: 70%;
+                .svgs {
+                }
+            }
         }
     }
 }
