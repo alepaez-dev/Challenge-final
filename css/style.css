@@ -336,6 +336,13 @@ header .container nav ul li a {
   visibility: hidden;
 }
 
+header .container nav ul li img:hover {
+  -webkit-box-shadow: black;
+          box-shadow: black;
+  margin: 10px 5px 0 5px;
+  background-color: white;
+}
+
 header .container nav ul li img {
   margin: 10px 5px 0 5px;
   background-color: white;
