@@ -10,6 +10,11 @@
   height: auto;
 }
 
+.aside-1 img#dropdownMenuButton {
+  border-radius: 50px;
+  width: 30px;
+}
+
 .aside-1 img {
   width: 100%;
 }
