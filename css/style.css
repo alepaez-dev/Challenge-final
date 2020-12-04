@@ -1,8 +1,88 @@
+.aside-1 img {
+  width: 100%;
+}
+
+.aside-1 .sign-up {
+  list-style: none;
+}
+
+.aside-1 .sign-up li:hover {
+  border-radius: 2px;
+  background-color: #d3dadd;
+  color: blue;
+  padding: 5px;
+}
+
+.aside-1 .sign-up li {
+  color: black;
+  padding: 5px;
+}
+
+.aside-1 .sign-up h3 {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.aside-1 .text-muted {
+  font-size: 15px;
+}
+
+.aside-1 .text-muted p {
+  background-color: transparent;
+  display: block;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  padding-left: 20%;
+}
+
+.aside-1 .popular-tags {
+  list-style: none;
+}
+
+.aside-1 .popular-tags h3 {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.aside-1 .popular-tags h3 svg:hover {
+  margin: 0 0 0 50%;
+  background-color: #d3dadd;
+}
+
+.aside-1 .popular-tags h3 svg {
+  margin: 0 0 0 50%;
+  background-color: transparent;
+}
+
+.aside-1 .popular-tags li:hover {
+  border-radius: 2px;
+  background-color: #d3dadd;
+  color: blue;
+  padding: 5px;
+}
+
+.aside-1 .popular-tags li {
+  color: black;
+  padding: 5px;
+}
+
 * {
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.bg-color {
+  background-color: #EEF0F1;
 }
 
 body hr {
@@ -11,13 +91,13 @@ body hr {
   border: 1px solid #bbbaba;
 }
 
-.seccion-main {
-  background-color: white;
-}
-
 .seccion-main .navbar {
   position: relative;
-  background-color: #eee6e6;
+  background-color: transparent;
+}
+
+.seccion-main .a-navbar {
+  background-color: transparent;
 }
 
 .seccion-main .a-navbar .image-coins {
@@ -30,6 +110,10 @@ body hr {
 .seccion-main .a-navbar .navbar-posts {
   font-weight: bold;
   color: black;
+}
+
+.seccion-main .a-navbar-der {
+  background-color: transparent;
 }
 
 .seccion-main .a-navbar-der .btn-feed {
@@ -45,6 +129,7 @@ body hr {
 }
 
 .seccion-main .a-navbar-der .btn-feed .btn-feed-flecha {
+  background-color: transparent;
   position: absolute;
   left: 80%;
 }
@@ -89,8 +174,9 @@ body hr {
 }
 
 .seccion-main .article-main {
+  border: 1px solid #dbd8d8;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: white;
   padding: 10px;
 }
 
@@ -99,27 +185,44 @@ body hr {
           box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
 }
 
+.seccion-main .article-main .iconos-article {
+  background-color: white;
+}
+
 .seccion-main .article-main .iconos-article .icono-article {
   width: 40px;
   border-radius: 20px;
 }
 
 .seccion-main .article-main .article-info {
+  background-color: white;
   width: 100%;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha {
+  background-color: white;
   color: #504e4e;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha .nombre-article {
+  background-color: white;
   font-weight: bold;
   line-height: 0.3cm;
   font-size: 14px;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha .fecha-article {
+  background-color: white;
   font-size: 11px;
+}
+
+.seccion-main .article-main .article-info .titulo-tags {
+  background-color: white;
+}
+
+.seccion-main .article-main .article-info .titulo-tags h3 {
+  background-color: white;
+  color: black;
 }
 
 .seccion-main .article-main .article-info .titulo-tags h3:hover {
@@ -127,6 +230,7 @@ body hr {
 }
 
 .seccion-main .article-main .article-info .titulo-tags a {
+  background-color: white;
   color: grey;
   text-decoration: none;
 }
@@ -135,11 +239,25 @@ body hr {
   color: black;
 }
 
+.seccion-main .article-main .article-info .iconos-botones-article {
+  background-color: white;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .iconos-botones-iconos {
+  background-color: white;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .iconos-botones-iconos .far {
+  background-color: white;
+}
+
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der {
+  background-color: white;
   width: 50%;
 }
 
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der p {
+  background-color: white;
   color: grey;
   width: 60%;
 }
@@ -149,6 +267,7 @@ body hr {
 }
 
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save {
+  background-color: white;
   background-color: #d1cfcf;
   border: none;
   border-radius: 7px;
@@ -161,73 +280,151 @@ body hr {
           box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
 }
 
-.aside-1 img {
-  width: 100%;
+header {
+  background-color: white;
+  padding-bottom: 10px;
 }
 
-.aside-1 .sign-up {
-  list-style: none;
-}
-
-.aside-1 .sign-up li:hover {
-  border-radius: 2px;
-  background-color: #f3efef;
-  color: blue;
-  padding: 5px;
-}
-
-.aside-1 .sign-up li {
-  color: black;
-  padding: 5px;
-}
-
-.aside-1 .text-muted {
-  font-size: 15px;
-}
-
-.aside-1 .text-muted p {
-  display: block;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-  padding-left: 20%;
-}
-
-.aside-1 .popular-tags {
-  list-style: none;
-}
-
-.aside-1 .popular-tags h3 {
-  padding: 5px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.aside-1 .popular-tags h3 svg:hover {
-  margin: 0 0 0 50%;
-  background-color: #f3efef;
-}
-
-.aside-1 .popular-tags h3 svg {
-  margin: 0 0 0 50%;
+header .container {
   background-color: white;
 }
 
-.aside-1 .popular-tags li:hover {
-  border-radius: 2px;
-  background-color: #f3efef;
-  color: blue;
-  padding: 5px;
+header .container nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.aside-1 .popular-tags li {
-  color: black;
-  padding: 5px;
+header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  background-color: white;
+}
+
+header .container nav ul li {
+  background-color: white;
+}
+
+header .container nav ul li a {
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
+
+header .container nav ul li img {
+  margin: 10px 5px 0 5px;
+  background-color: white;
+}
+
+header .container nav ul li img.redondeado {
+  margin-top: 7px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+header .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  background-color: white;
+  width: 55%;
+}
+
+header .container section input:hover {
+  border: 1px solid #a1a1a1;
+  background-color: #fbfbfb;
+  margin: 2px 0 0 15px;
+  padding-left: 5px;
+}
+
+header .container section input {
+  background-color: #fbfbfb;
+  margin: 2px 0 0 15px;
+  padding-left: 5px;
+  width: 80%;
+}
+
+header.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-color: white;
+    padding-bottom: 10px;
+  }
+  header .container {
+    background-color: white;
+  }
+  header .container nav {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .container nav ul {
+    padding-top: 10px;
+    background-color: white;
+  }
+  header .container nav ul li {
+    background-color: white;
+  }
+  header .container nav ul li a {
+    font-weight: bold;
+    margin-top: 2px;
+    text-align: center;
+    width: 140px;
+    height: 35px;
+    visibility: visible;
+  }
+  header .container nav ul li img {
+    margin: 10px 5px 0 5px;
+    background-color: white;
+  }
+  header .container nav ul li img.redondeado {
+    margin-top: 7px;
+    height: 30px;
+    border-radius: 100%;
+  }
+  header .container section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10px;
+    background-color: white;
+    width: 60%;
+  }
+  header .container section input:hover {
+    border: 1px solid #a1a1a1;
+    background-color: #fbfbfb;
+    margin: 2px 0 0 15px;
+    padding-left: 5px;
+  }
+  header .container section input {
+    background-color: #fbfbfb;
+    margin: 2px 0 0 15px;
+    padding-left: 5px;
+    width: 80%;
+  }
+  header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
 }
 
 .imagen-aside-2 {
