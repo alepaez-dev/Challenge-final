@@ -199,6 +199,10 @@ body hr {
   font-size: 11px;
 }
 
+.seccion-main .article-main .article-info .titulo-tags h3 {
+  color: black;
+}
+
 .seccion-main .article-main .article-info .titulo-tags h3:hover {
   color: blue;
 }
