@@ -385,6 +385,7 @@ header.sticky {
     background-color: white;
   }
   header .container nav ul li a {
+    padding: 5px;
     font-weight: bold;
     margin-top: 2px;
     text-align: center;
