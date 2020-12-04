@@ -82,7 +82,6 @@
                 color: grey;
                 text-decoration: none;
                 border-radius: 5px;
-                padding: 5px 10px 5px 10px;
                 
                 &:hover {
                     color: black;
@@ -189,6 +188,11 @@ a#h-sad {
 @media only screen and(min-width:768px) {
     .seccion-main{
         .article-main {
+            .titulo-tags{
+                a{
+                    padding: 5px 10px 5px 10px;
+                }
+            }
             text-align: center;
             .article-info {
                 margin: auto;

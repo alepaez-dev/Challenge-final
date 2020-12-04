@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  overflow-x: auto;
+}
+
 body {
   background-color: #EEF0F1;
 }
@@ -254,7 +258,6 @@ header.sticky {
   color: grey;
   text-decoration: none;
   border-radius: 5px;
-  padding: 5px 10px 5px 10px;
 }
 
 .seccion-main .article-main .titulo-tags a:hover {
@@ -366,6 +369,9 @@ a#h-sad {
 @media only screen and (min-width: 768px) {
   .seccion-main .article-main {
     text-align: center;
+  }
+  .seccion-main .article-main .titulo-tags a {
+    padding: 5px 10px 5px 10px;
   }
   .seccion-main .article-main .article-info {
     margin: auto;
