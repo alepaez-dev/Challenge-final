@@ -523,4 +523,35 @@ ul li.lista-aside-2:first-of-type {
   border-radius: 7px;
   height: 25px;
 }
+
+.foooter {
+  padding: 20px;
+  background-color: #bdc1c7;
+}
+
+.foooter .listas-footer ul {
+  list-style: none;
+}
+
+.foooter .listas-footer ul li {
+  padding: 5px;
+}
+
+.foooter .footer-article-1 {
+  margin: 10px;
+  text-align: center;
+}
+
+.foooter .footer-article-2 {
+  text-align: center;
+}
+
+.foooter .redes-sociales i {
+  padding: 5px;
+}
+
+.foooter .footer-info i {
+  padding: 10px;
+  color: green;
+}
 /*# sourceMappingURL=style.css.map */
