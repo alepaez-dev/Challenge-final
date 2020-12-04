@@ -421,19 +421,23 @@ a#h-sad {
 .aside-derecha {
   height: 100vh;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
 }
 
 .aside-derecha .div-1-aside-2 {
+  width: 95%;
+  margin: auto;
   background-color: #F9FAFA;
-  border: 1px solid #c0bcbc;
+  border: 1px solid #e7e1e1;
   border-radius: 6px;
-  height: 50%;
 }
 
 .aside-derecha .div-1-aside-2 .cuadro-negro {
   background-color: black;
   width: 100%;
-  height: 10%;
+  height: 40px;
 }
 
 .aside-derecha .div-1-aside-2 .foto-nombre {
@@ -454,8 +458,31 @@ a#h-sad {
   margin-left: 70px;
 }
 
-.aside-derecha .div-2-aside-2 {
-  background-color: blue;
-  height: 50%;
+.aside-derecha .div-1-aside-2 p {
+  font-size: 14px;
+  color: grey;
+}
+
+.aside-derecha .div-1-aside-2 .btn-follow {
+  width: 90%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #252583;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.aside-derecha .div-1-aside-2 .aside-der-info .info h5 {
+  font-family: 'Castoro', serif;
+  font-size: 16px;
+  color: #4d4b4b;
+}
+
+.aside-derecha .div-1-aside-2 .aside-der-info .info p {
+  line-height: 0.6cm;
+  font-size: 17px;
+  color: black;
 }
 /*# sourceMappingURL=style-pagina-2.css.map */

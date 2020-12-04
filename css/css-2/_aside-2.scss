@@ -1,15 +1,20 @@
 .aside-derecha {
     height: 100vh;
     width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
     .div-1-aside-2 {
+        width: 95%;
+        margin: auto;
         background-color: #F9FAFA;
-        border: 1px solid rgb(192, 188, 188);
+        border: 1px solid rgb(231, 225, 225);
         border-radius: 6px;
-        height: 50%;
+        //height: 50%;
         .cuadro-negro {
             background-color: black;
             width: 100%;
-            height: 10%;
+            height: 40px;
         }
         .foto-nombre {
             position: relative;
@@ -26,9 +31,38 @@
                 margin-left: 70px;
             }
         }
+
+        p {
+            font-size: 14px;
+            color: grey;
+        }
+
+        .btn-follow {
+            width: 90%;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(37, 37, 131);
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .aside-der-info {
+            .info {
+                h5 {
+                    font-family: 'Castoro', serif;
+                    font-size: 16px;
+                    color: rgb(77, 75, 75);
+                }
+                p {
+                    line-height: 0.6cm;
+                    font-size: 17px;
+                    color: black;
+                }
+            }
+
+        }
     }
-    .div-2-aside-2 {
-        background-color: blue;
-        height: 50%;
-    }
+    
 }
