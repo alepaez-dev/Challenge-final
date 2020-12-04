@@ -574,9 +574,11 @@ ul li.lista-aside-2:first-of-type {
 footer {
   background-color: #bdc1c7;
   width: 100%;
+  margin-top: 10px;
 }
 
 .div-footer-principal {
+  margin-top: 50px;
   padding: 10px;
 }
 
@@ -595,5 +597,27 @@ footer {
       align-self: center;
   line-height: 0.7cm;
   margin: 0px 20px 0px 20px;
+}
+
+.div-footer-principal .div-footer .listas-footer li:hover {
+  color: white;
+}
+
+.div-footer-principal .div-footer .listas-footer .fab {
+  font-size: 20px;
+}
+
+.div-footer-principal .div-footer .listas-footer .fab:hover {
+  color: white;
+}
+
+.div-footer-principal .div-footer p:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .div-footer-principal .div-footer .listas-footer .fab {
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

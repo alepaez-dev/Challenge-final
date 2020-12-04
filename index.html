@@ -259,8 +259,17 @@
                                 </div>
 
                                 <div class="a-navbar-der">
-                                    <button class="btn-feed mr-5 p-2 d-md-none">Feed
-                                        <img class="btn-feed-flecha" src="assets/btn-feed-flecha.svg" alt="">
+                                    <button class="btn-feed mr-5 p-2 d-md-none dropdown-toggle" type="button" id="dropdownMenuBoton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Feed
+                                        <!-- <img class="btn-feed-flecha" src="assets/btn-feed-flecha.svg" alt=""> -->
+                                        
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuBoton">
+                                            <a href="#" class="dropdown-item">Feed</a>
+                                            <a href="#" class="dropdown-item">Week</a>
+                                            <a href="#" class="dropdown-item">Month</a>
+                                            <a href="#" class="dropdown-item">Year</a>
+                                            <a href="#" class="dropdown-item">Infinity</a>
+                                            <a href="#" class="dropdown-item">Latest</a>
+                                        </div>
                                     </button>
                                     <nav class="navbar-mdsize d-none d-md-block">
                                         <a href="#">Feed</a>
@@ -748,8 +757,7 @@
                                     </ul>
                                 </div>
                                 <div class=" div-footer col-12">
-                                    <div
-                                        class="d-flex flex-column justify-content-between align-items-center text-center mt-4">
+                                    <div class="d-flex flex-column justify-content-between align-items-center text-center mt-4">
                                         <p><strong>DEV Community</strong>- A constructive and inclusive social network.
                                             Open Source and radically transparent</p>
                                         <p>Built on <strong>Forem</strong>-- the <strong>open source</strong> software
