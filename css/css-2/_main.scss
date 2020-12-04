@@ -1,4 +1,6 @@
 .seccion-main {
+    border: 1px solid rgb(204, 199, 199);
+    border-radius: 5px;
     background-color: white;
     .navbar {
         position: relative;
@@ -60,6 +62,7 @@
     .imagen-main {
         align-self: center;
         .imagen-principal {
+            border: none;
             width: 100%;
             margin: auto;
             padding: 10px;
