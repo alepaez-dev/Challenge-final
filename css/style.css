@@ -283,6 +283,7 @@ body hr {
 header {
   background-color: white;
   margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 header .container nav {
