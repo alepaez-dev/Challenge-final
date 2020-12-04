@@ -188,4 +188,8 @@ body hr {
 .seccion-main .info-article .parrafo-izq-border {
   border-left: 10px solid grey;
 }
+
+.aside-1 .div-aside-1 .iconos-aside-1 .svgs-aside {
+  width: 100px;
+}
 /*# sourceMappingURL=style-pagina-2.css.map */
