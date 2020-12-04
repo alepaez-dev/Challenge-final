@@ -363,12 +363,12 @@ header.sticky {
 @media only screen and (max-width: 768px) {
   .aside-abajo {
     position: fixed;
-    top: 650px;
-    height: 15vh;
+    top: 965px;
+    height: 8vh;
     width: 100%;
   }
   .aside-abajo .div-aside-1 {
-    height: 15vh;
+    height: 8vh;
   }
 }
 /*# sourceMappingURL=style-pagina-2.css.map */
