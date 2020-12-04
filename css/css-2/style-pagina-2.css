@@ -39,6 +39,7 @@ header .container nav {
 }
 
 header .container nav ul {
+  padding-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
