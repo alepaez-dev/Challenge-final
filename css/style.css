@@ -282,8 +282,11 @@ body hr {
 
 header {
   background-color: white;
-  margin-bottom: 10px;
   padding-bottom: 10px;
+}
+
+header .container {
+  background-color: white;
 }
 
 header .container nav {
@@ -348,10 +351,17 @@ header .container section input {
   width: 80%;
 }
 
+header.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     background-color: white;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
   header .container {
     background-color: white;
@@ -408,6 +418,12 @@ header .container section input {
     margin: 2px 0 0 15px;
     padding-left: 5px;
     width: 80%;
+  }
+  header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 4;
   }
 }
 

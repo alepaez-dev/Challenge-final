@@ -1,11 +1,12 @@
 header {
-    
+
+
+
     background-color: white;
-    margin-bottom: 10px;
     padding-bottom: 10px;
 
     .container {
-        
+        background-color: white;
 
         nav {
 
@@ -72,14 +73,23 @@ header {
         }
 
     }
+    
 
+}
+header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    
 }
 
 @media only screen and (min-width:768px) {
     header {
 
+
         background-color: white;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
 
         .container {
             background-color: white;
@@ -149,6 +159,14 @@ header {
 
         }
 
+    }
+
+    header.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 4;
+        
     }
 
 }
