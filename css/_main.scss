@@ -1,11 +1,11 @@
 .seccion-main {
-    background-color: white;
     .navbar {
         position: relative;
-        background-color:$navbar-color;
+        background-color:transparent;
         }
 
         .a-navbar{
+            background-color: transparent;
             .image-coins{
                 position: absolute;
                 left:1%;
@@ -19,6 +19,7 @@
         }
 
         .a-navbar-der {
+            background-color: transparent;
             .btn-feed {
                 position: relative;
                 border: none;
@@ -30,6 +31,7 @@
                 height: 40px;
                 text-align: left;
                 .btn-feed-flecha {
+                    background-color: transparent;
                     position: absolute;
                     left: 80%;
                 }
@@ -68,40 +70,49 @@
     }
 
     .article-main {
+        border: 1px solid rgb(219, 216, 216);
         border-radius: 10px;
-        background-color: $article-main-bg;
+        background-color: white;
         padding: 10px;
 
         &:hover {
             box-shadow: 0px 3px 20px 10px rgba(0,0,0,0.15);
         }
         .iconos-article {
+            background-color: white;
             .icono-article {
                 width :40px;
                 border-radius: 20px;
             }
         }
         .article-info {
+            background-color: white;
             width: 100%;
             .nombre-fecha{
+                background-color: white;
                 color: $nombre-fecha-color;
                 .nombre-article{
+                    background-color: white;
                     font-weight: bold;
                     line-height: 0.3cm;
                     font-size: 14px;
                 }
                 .fecha-article {
+                    background-color: white;
                     font-size: 11px;
                 }
             }
             .titulo-tags {
+                background-color: white;
                 h3 {
+                    background-color: white;
                     color: black;
                     &:hover {
                         color: blue;
                     }
                 }
                 a {
+                    background-color: white;
                     color: grey;
                     text-decoration: none;
                     
@@ -112,9 +123,18 @@
             }
 
             .iconos-botones-article {
+                background-color: white;
+                .iconos-botones-iconos {
+                    background-color: white;
+                    .far {
+                        background-color: white;
+                    }
+                }
                 .botones-der {
+                    background-color: white;
                     width: 50%;
                     p {
+                        background-color: white;
                         color: grey;
                         width: 60%;
                         
@@ -123,6 +143,7 @@
                         }
                     }
                     .btn-save {
+                        background-color: white;
                         background-color: rgb(209, 207, 207);
                         border: none;
                         border-radius: 7px;

@@ -88,13 +88,13 @@ body hr {
   border: 1px solid #bbbaba;
 }
 
-.seccion-main {
-  background-color: white;
-}
-
 .seccion-main .navbar {
   position: relative;
-  background-color: #eee6e6;
+  background-color: transparent;
+}
+
+.seccion-main .a-navbar {
+  background-color: transparent;
 }
 
 .seccion-main .a-navbar .image-coins {
@@ -107,6 +107,10 @@ body hr {
 .seccion-main .a-navbar .navbar-posts {
   font-weight: bold;
   color: black;
+}
+
+.seccion-main .a-navbar-der {
+  background-color: transparent;
 }
 
 .seccion-main .a-navbar-der .btn-feed {
@@ -122,6 +126,7 @@ body hr {
 }
 
 .seccion-main .a-navbar-der .btn-feed .btn-feed-flecha {
+  background-color: transparent;
   position: absolute;
   left: 80%;
 }
@@ -166,8 +171,9 @@ body hr {
 }
 
 .seccion-main .article-main {
+  border: 1px solid #dbd8d8;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: white;
   padding: 10px;
 }
 
@@ -176,30 +182,43 @@ body hr {
           box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
 }
 
+.seccion-main .article-main .iconos-article {
+  background-color: white;
+}
+
 .seccion-main .article-main .iconos-article .icono-article {
   width: 40px;
   border-radius: 20px;
 }
 
 .seccion-main .article-main .article-info {
+  background-color: white;
   width: 100%;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha {
+  background-color: white;
   color: #504e4e;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha .nombre-article {
+  background-color: white;
   font-weight: bold;
   line-height: 0.3cm;
   font-size: 14px;
 }
 
 .seccion-main .article-main .article-info .nombre-fecha .fecha-article {
+  background-color: white;
   font-size: 11px;
 }
 
+.seccion-main .article-main .article-info .titulo-tags {
+  background-color: white;
+}
+
 .seccion-main .article-main .article-info .titulo-tags h3 {
+  background-color: white;
   color: black;
 }
 
@@ -208,6 +227,7 @@ body hr {
 }
 
 .seccion-main .article-main .article-info .titulo-tags a {
+  background-color: white;
   color: grey;
   text-decoration: none;
 }
@@ -216,11 +236,25 @@ body hr {
   color: black;
 }
 
+.seccion-main .article-main .article-info .iconos-botones-article {
+  background-color: white;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .iconos-botones-iconos {
+  background-color: white;
+}
+
+.seccion-main .article-main .article-info .iconos-botones-article .iconos-botones-iconos .far {
+  background-color: white;
+}
+
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der {
+  background-color: white;
   width: 50%;
 }
 
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der p {
+  background-color: white;
   color: grey;
   width: 60%;
 }
@@ -230,6 +264,7 @@ body hr {
 }
 
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save {
+  background-color: white;
   background-color: #d1cfcf;
   border: none;
   border-radius: 7px;
@@ -244,11 +279,7 @@ body hr {
 
 header {
   background-color: white;
-  padding-bottom: 10px;
-}
-
-header .container {
-  background-color: white;
+  margin-bottom: 10px;
 }
 
 header .container nav {
@@ -313,17 +344,10 @@ header .container section input {
   width: 80%;
 }
 
-header.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 4;
-}
-
 @media only screen and (min-width: 768px) {
   header {
     background-color: white;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
   header .container {
     background-color: white;
@@ -380,12 +404,6 @@ header.sticky {
     margin: 2px 0 0 15px;
     padding-left: 5px;
     width: 80%;
-  }
-  header.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 4;
   }
 }
 
