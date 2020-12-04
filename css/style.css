@@ -79,6 +79,9 @@
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.bg-color {
   background-color: #EEF0F1;
 }
 
