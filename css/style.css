@@ -397,6 +397,7 @@ header.sticky {
     background-color: white;
   }
   header .container nav ul li a {
+    padding: 5px;
     font-weight: bold;
     margin-top: 2px;
     text-align: center;
@@ -439,6 +440,15 @@ header.sticky {
     top: 0;
     z-index: 4;
   }
+}
+
+.aside-2 .class-1sectionOfAside2 .sec-img-aside {
+  padding: 10px;
+}
+
+.aside-2 .class-1sectionOfAside2 .sec-img-aside .img-Aside {
+  margin-right: 10px;
+  height: 50px;
 }
 
 .aside2 img {
@@ -500,6 +510,8 @@ header.sticky {
 }
 
 ul li.lista-aside-2 {
+  padding: 10px;
+  border-radius: 5px;
   border-bottom: 1px solid #f0edf0;
 }
 
@@ -535,37 +547,32 @@ ul li.lista-aside-2:first-of-type {
 
 .btn-new {
   border-radius: 7px;
-  height: 25px;
+  padding: 5px 10px 5px 10px;
 }
 
-.foooter {
-  padding: 20px;
+footer {
   background-color: #bdc1c7;
+  width: 100%;
 }
 
-.foooter .listas-footer ul {
-  list-style: none;
-}
-
-.foooter .listas-footer ul li {
-  padding: 5px;
-}
-
-.foooter .footer-article-1 {
-  margin: 10px;
-  text-align: center;
-}
-
-.foooter .footer-article-2 {
-  text-align: center;
-}
-
-.foooter .redes-sociales i {
-  padding: 5px;
-}
-
-.foooter .footer-info i {
+.div-footer-principal {
   padding: 10px;
-  color: green;
+}
+
+.div-footer-principal .div-footer .listas-footer {
+  width: 100%;
+  margin: auto;
+  list-style: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.div-footer-principal .div-footer .listas-footer li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 0.7cm;
+  margin: 0px 20px 0px 20px;
 }
 /*# sourceMappingURL=style.css.map */

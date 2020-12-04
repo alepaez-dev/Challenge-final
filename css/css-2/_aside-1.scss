@@ -1,21 +1,24 @@
-.aside-1 {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 50px;
-        //z-index: 4;
+.div-aside-principal {
+    max-width: 70px;
+    .aside-1 {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 50px;
+            //z-index: 4;
+        
+        background-color: #EEF0F1;
+        height: 100px;
+        width: 100%;
     
-    background-color: #EEF0F1;
-    height: 100px;
-    width: 100%;
-
-   .div-aside-1{
-    height: 100vh;
-       .iconos-aside-1{
-            .svgs {
-               opacity: 0.7;
+       .div-aside-1{
+        height: 100vh;
+           .iconos-aside-1{
+                .svgs {
+                   opacity: 0.7;
+               }
            }
-       }
-   } 
+       } 
+    }
 }
 
 @media only screen and(max-width:768px) {
