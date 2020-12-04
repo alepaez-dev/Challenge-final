@@ -430,6 +430,15 @@ header.sticky {
   }
 }
 
+.aside-2 .class-1sectionOfAside2 .sec-img-aside {
+  padding: 10px;
+}
+
+.aside-2 .class-1sectionOfAside2 .sec-img-aside .img-Aside {
+  margin-right: 10px;
+  height: 50px;
+}
+
 .aside2 img {
   width: 110%;
 }
@@ -489,6 +498,8 @@ header.sticky {
 }
 
 ul li.lista-aside-2 {
+  padding: 10px;
+  border-radius: 5px;
   border-bottom: 1px solid #f0edf0;
 }
 
@@ -524,7 +535,7 @@ ul li.lista-aside-2:first-of-type {
 
 .btn-new {
   border-radius: 7px;
-  height: 25px;
+  padding: 5px 10px 5px 10px;
 }
 
 .foooter {
