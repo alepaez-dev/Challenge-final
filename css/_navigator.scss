@@ -1,0 +1,154 @@
+header {
+    
+
+    background-color: white;
+    margin-bottom: 10px;
+
+    .container {
+        
+
+        nav {
+
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                padding-top: 10px;
+                background-color: white;
+
+                li {
+                    a {
+
+                        width: 1px;
+                        height: 1px;
+                        visibility: hidden;
+
+                    }
+
+                    background-color: white;
+
+                    img {
+                        margin: 10px 5px 0 5px;
+                        background-color: white;
+                    }
+
+                    img.redondeado {
+
+                        margin-top: 7px;
+                        height: 30px;
+                        border-radius: 100%;
+                    }
+
+
+                }
+            }
+        }
+
+        section {
+            display: flex;
+            padding-top: 10px;
+            background-color: white;
+            width: 55%;
+
+            input:hover {
+                border: 1px solid rgb(161, 161, 161);
+                background-color: rgb(251, 251, 251);
+                margin: 2px 0 0 15px;
+                padding-left: 5px;
+
+
+            }
+
+            input {
+
+                background-color: rgb(251, 251, 251);
+                margin: 2px 0 0 15px;
+                padding-left: 5px;
+                width: 80%;
+
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    header {
+
+        background-color: white;
+        margin-bottom: 10px;
+
+        .container {
+            background-color: white;
+
+            nav {
+
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+
+                ul {
+                    padding-top: 10px;
+                    background-color: white;
+
+                    li {
+                        a {
+                            font-weight: bold;
+                            margin-top: 2px;
+                            text-align: center;
+                            width: 140px;
+                            height: 35px;
+                            visibility: visible;
+                        }
+
+                        background-color: white;
+
+                        img {
+                            margin: 10px 5px 0 5px;
+                            background-color: white;
+                        }
+
+                        img.redondeado {
+                            margin-top: 7px;
+                            height: 30px;
+                            border-radius: 100%;
+                        }
+
+
+                    }
+                }
+            }
+
+            section {
+                display: flex;
+                padding-top: 10px;
+                background-color: white;
+                width: 60%;
+
+                input:hover {
+                    border: 1px solid rgb(161, 161, 161);
+                    background-color: rgb(251, 251, 251);
+                    margin: 2px 0 0 15px;
+                    padding-left: 5px;
+
+
+                }
+
+                input {
+
+                    background-color: rgb(251, 251, 251);
+                    margin: 2px 0 0 15px;
+                    padding-left: 5px;
+                    width: 80%;
+
+                }
+            }
+
+        }
+
+    }
+
+}
