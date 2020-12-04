@@ -238,10 +238,6 @@ body hr {
   border: 2px solid orangered;
 }
 
-.class-1sectionOfAside2 {
-  background-color: #eef0f1;
-}
-
 .tam-letra-article {
   font-size: 15px;
 }
@@ -252,26 +248,37 @@ body hr {
 
 .listings {
   margin-top: 10px;
-  background-color: #eef0f1;
 }
 
 .listings-ul {
   list-style-type: none;
 }
 
+ul li.lista-aside-2 {
+  border-bottom: 1px solid #f0edf0;
+}
+
+ul li.lista-aside-2:hover {
+  border-bottom: rgba(207, 207, 205, 0.89);
+}
+
+ul li.lista-aside-2:first-of-type {
+  font-weight: bold;
+}
+
 .article {
-  background-color: #eef0f1;
-  padding: 5px;
+  /*background-color: #eef0f1;*/
+  padding: 10px;
 }
 
 .articlesNews {
   margin-top: 10px;
-  background-color: #eef0f1;
+  /*background-color: #eef0f1;*/
 }
 
 .CreateListin {
   margin-top: 10px;
-  background-color: #eef0f1;
+  /*background-color: #eef0f1;*/
 }
 
 .news-ul {
