@@ -15,6 +15,7 @@ header {
             justify-content: space-between;
 
             ul {
+                padding-right: 15px;
                 display: flex;
                 padding-top: 10px;
                 background-color: white;
@@ -29,10 +30,19 @@ header {
                     }
 
                     background-color: white;
-
+                    img:hover {
+                        box-shadow: black;
+                        margin: 10px 5px 0 5px;
+                        background-color: white;
+                    }
                     img {
                         margin: 10px 5px 0 5px;
                         background-color: white;
+                    }
+                    img#dropdownMenuButton {
+                        border-radius: 50px;
+                        width: 30px;
+                        
                     }
 
                     img.redondeado {

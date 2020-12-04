@@ -334,6 +334,15 @@ header .container nav ul li {
   background-color: white;
 }
 
+header .container nav ul li .nav-item.show element.style {
+  position: absolute;
+  -webkit-transform: translate3d(758px, 50px, 0px);
+          transform: translate3d(758px, 50px, 0px);
+  top: 0px;
+  left: -100px;
+  will-change: transform;
+}
+
 header .container nav ul li a {
   width: 1px;
   height: 1px;
@@ -341,8 +350,6 @@ header .container nav ul li a {
 }
 
 header .container nav ul li img:hover {
-  -webkit-box-shadow: black;
-          box-shadow: black;
   margin: 10px 5px 0 5px;
   background-color: white;
 }
@@ -573,9 +580,11 @@ ul li.lista-aside-2:first-of-type {
 footer {
   background-color: #bdc1c7;
   width: 100%;
+  margin-top: 10px;
 }
 
 .div-footer-principal {
+  margin-top: 50px;
   padding: 10px;
 }
 
@@ -594,5 +603,27 @@ footer {
       align-self: center;
   line-height: 0.7cm;
   margin: 0px 20px 0px 20px;
+}
+
+.div-footer-principal .div-footer .listas-footer li:hover {
+  color: white;
+}
+
+.div-footer-principal .div-footer .listas-footer .fab {
+  font-size: 20px;
+}
+
+.div-footer-principal .div-footer .listas-footer .fab:hover {
+  color: white;
+}
+
+.div-footer-principal .div-footer p:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .div-footer-principal .div-footer .listas-footer .fab {
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

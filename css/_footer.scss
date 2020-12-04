@@ -1,9 +1,11 @@
 footer {
     background-color: rgb(189, 193, 199);
     width: 100%;
+    margin-top: 10px;
 }
 
 .div-footer-principal {
+    margin-top: 50px;
     padding: 10px;
     .div-footer {
         .listas-footer {
@@ -15,7 +17,32 @@ footer {
                     align-self: center;
                     line-height: 0.7cm;
                     margin: 0px 20px 0px 20px;
+                    &:hover {
+                        color: white;
+                    }
                 }
+
+                .fab {
+                    font-size: 20px;
+                    &:hover {
+                        color: white;
+                    }
+                }
+        }
+        p:hover {
+            color: white;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .div-footer-principal{
+        .div-footer{
+            .listas-footer{
+                .fab {
+                    font-size: 40px;
+                }
+            }
         }
     }
 }

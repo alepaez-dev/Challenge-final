@@ -79,6 +79,7 @@
 
         .titulo-tags {
             a {
+                line-height: 1cm;
                 color: grey;
                 text-decoration: none;
                 border-radius: 5px;
@@ -167,22 +168,27 @@
 a#h-web {
     background-color: black;
     color: pink;
+    padding: 5px;
 }
 a#h-software {
     background-color: blue;
     color: yellow;
+    padding: 5px;
 }
 a#h-improvement {
     background-color:#8fb68d;
     color: black;
+    padding: 5px;
 }
 a#h-kidding {
     background-color:#009999;
     color: white; 
+    padding: 5px;
 }
 a#h-sad {
     background-color: rgb(116, 33, 33);
     color: white;  
+    padding: 5px;
 }
 
 @media only screen and(min-width:768px) {
