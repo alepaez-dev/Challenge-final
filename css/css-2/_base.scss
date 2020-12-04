@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: auto;
+}
+
 body {
+    background-color: #EEF0F1;
     hr {
         width: 95%;
         margin: auto;
