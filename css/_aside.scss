@@ -1,5 +1,15 @@
 
 .aside-1 {
+    #global{
+        height: 300px;
+        width: 100%;
+        border: transparent;
+        background: #f1f1f1;
+        overflow-y: scroll;
+    }
+    #contenido{
+        height:auto ;
+    }
     img{
         width: 100%;
     }
