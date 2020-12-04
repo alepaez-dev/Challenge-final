@@ -205,7 +205,7 @@ body hr {
   height: 60vh;
 }
 
-.aside-1 .div-aside-1 .iconos-aside-1 .svgs-aside {
-  width: 100px;
+.aside-1 .div-aside-1 .iconos-aside-1 .svgs {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style-pagina-2.css.map */
