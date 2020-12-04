@@ -166,6 +166,7 @@ header.sticky {
   border: 1px solid #ccc7c7;
   border-radius: 5px;
   background-color: white;
+  text-align: justify;
 }
 
 .seccion-main .navbar {
