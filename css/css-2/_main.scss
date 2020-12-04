@@ -75,9 +75,19 @@
         background-color: $article-main-bg;
         padding: 10px;
 
-        &:hover {
-            box-shadow: 0px 3px 20px 10px rgba(0,0,0,0.15);
+        .titulo-tags {
+            a {
+                color: grey;
+                text-decoration: none;
+                border-radius: 5px;
+                padding: 5px;
+                
+                &:hover {
+                    color: black;
+                }
+            }
         }
+
         .iconos-article {
             .icono-article {
                 width :40px;
@@ -97,22 +107,7 @@
                     font-size: 11px;
                 }
             }
-            .titulo-tags {
-                h3 {
-                    &:hover {
-                        color: blue;
-                    }
-                }
-                a {
-                    color: grey;
-                    text-decoration: none;
-                    
-                    &:hover {
-                        color: black;
-                    }
-                }
-            }
-
+            
             .iconos-botones-article {
                 .botones-der {
                     width: 50%;
@@ -166,6 +161,27 @@
     }
 
 
+}
+// ids
+a#h-web {
+    background-color: black;
+    color: pink;
+}
+a#h-software {
+    background-color: blue;
+    color: yellow;
+}
+a#h-improvement {
+    background-color:#8fb68d;
+    color: black;
+}
+a#h-kidding {
+    background-color:#009999;
+    color: white; 
+}
+a#h-sad {
+    background-color: rgb(116, 33, 33);
+    color: white;  
 }
 
 @media only screen and(min-width:768px) {
