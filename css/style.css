@@ -1,3 +1,20 @@
+.aside-1 #global {
+  height: 300px;
+  width: 100%;
+  border: transparent;
+  background: #f1f1f1;
+  overflow-y: scroll;
+}
+
+.aside-1 #contenido {
+  height: auto;
+}
+
+.aside-1 img#dropdownMenuButton {
+  border-radius: 50px;
+  width: 30px;
+}
+
 .aside-1 img {
   width: 100%;
 }
@@ -323,9 +340,21 @@ header .container nav ul li a {
   visibility: hidden;
 }
 
+header .container nav ul li img:hover {
+  -webkit-box-shadow: black;
+          box-shadow: black;
+  margin: 10px 5px 0 5px;
+  background-color: white;
+}
+
 header .container nav ul li img {
   margin: 10px 5px 0 5px;
   background-color: white;
+}
+
+header .container nav ul li img#dropdownMenuButton {
+  border-radius: 50px;
+  width: 30px;
 }
 
 header .container nav ul li img.redondeado {
