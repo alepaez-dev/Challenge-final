@@ -493,14 +493,20 @@ a#h-sad {
   border-radius: 6px;
 }
 
+.aside-derecha .div-1-aside-2 .btn-follow:hover {
+  background-color: #d6d4d4;
+  color: black;
+  font-weight: bold;
+}
+
 .aside-derecha .div-1-aside-2 .aside-der-info .info h5 {
-  font-family: 'Castoro', serif;
+  font-style: italic;
   font-size: 16px;
   color: #4d4b4b;
 }
 
 .aside-derecha .div-1-aside-2 .aside-der-info .info p {
-  line-height: 0.6cm;
+  line-height: 0.5cm;
   font-size: 17px;
   color: black;
 }
@@ -541,5 +547,10 @@ a#h-sad {
 
 .lista-ul .lista-li-aside-2:hover {
   background-color: white;
+}
+
+.lista-ul .lista-li-aside-2 .article {
+  margin: 5px;
+  text-align: center;
 }
 /*# sourceMappingURL=style-pagina-2.css.map */

@@ -46,19 +46,26 @@
             color: white;
             border: none;
             border-radius: 6px;
+            &:hover {
+                background-color: rgb(214, 212, 212);
+                color: black;
+                font-weight: bold;
+            }
         }
 
         .aside-der-info {
             .info {
                 h5 {
-                    font-family: 'Castoro', serif;
+                    //font-family: 'Castoro', serif;
+                    font-style: italic;
                     font-size: 16px;
                     color: rgb(77, 75, 75);
                 }
                 p {
-                    line-height: 0.6cm;
+                    line-height: 0.5cm;
                     font-size: 17px;
                     color: black;
+                    
                 }
             }
 
