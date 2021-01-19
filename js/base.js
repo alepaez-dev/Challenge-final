@@ -62,10 +62,11 @@ const showUsers = (response, path) => {
   listrasusuarios.forEach(element => {
     console.log(element);
     console.log(element.dateCreated);
-    listanueva += `<a href="#">
+    console.log(element._id);
+    listanueva += `<a href="user.html?id=${element._id}">
                                     <article class="article-main d-flex m-1">
                                         <div class="iconos-article mr-2">
-                                            <img class="icono-article" src="${element.urlPhoto}" alt="">
+                                            <img class="icono-article" src="${element.urlAuthor}" alt="">
                                         </div>
                                         <div class="article-info mt-1 mr-1">
                                             <div class="nombre-fecha">
@@ -148,4 +149,46 @@ const showUsers = (response, path) => {
   //   }
   $(path).append(listanueva);
   //   deleteUserBtns();
+};
+
+//printuser
+const printUser = (response, path) => {
+  let arrData = "";
+  if (response !== null) {
+    console.log("si entro al final del null");
+    arrData += `<div class="seccion-main d-flex flex-column">
+                            <div class="imagen-main d-flex flex-column justify-content-center">
+                                <img class="imagen-principal" src="${response.urlPhoto}" alt="">
+                            </div>
+                            <article class="article-main d-flex flex-column m-1 mt-2">
+                                <div class="titulo-tags">
+                                    <h3 class="mb-4">${response.title}</h3>
+                                    <a href="#" id="h-web">#${response.tag}</a>
+                                    
+                                </div>
+                                <div class="article-info mt-3 mr-1">
+                                    <div class="nombre-fecha d-flex align-items-baseline">
+                                        <div class="iconos-article mr-2">
+                                            <img class="icono-article" src="${response.urlAuthor}" alt="">
+                                        </div>
+                                        <h5 class="nombre-article">
+                                            ${response.author}
+                                        </h5>
+                                    </div>
+                                    
+                                </div>a
+                                <div class="parrafo-article-2 mt-3">
+                                    <p class="parrafo-cursiva">
+                                        May 17 <i>Originally published at <strong>Medium</strong>. Updated on ${response.dateCreated}.</i><br> ${response.minsToRead} min read
+                                    </p>
+                                </div>
+                            </article>
+                            <div class="info-article">
+                                ${response.content}
+                            </div>
+                        </div>`;
+  } else {
+    arrData += `<p class="card-text">El usuario no existe</p>`;
+  }
+  $(path).append(arrData);
 };
