@@ -1,0 +1,33 @@
+.bodyTags{
+    .marginForm{
+        display: flex;
+        margin-top:100px;
+        
+        justify-content: center;
+        .card-body{
+            
+            ul{
+                
+                display:flex;
+                justify-content: center;
+                li{
+                    margin: 10px;
+                    list-style: none;
+                    padding: 3px;
+                    background-color:rgb(99, 92, 158);
+                    color: white;
+                    border-radius: 3px;
+                    text-align: center;
+                    
+                }
+            }
+        }
+        
+    }
+   
+    
+    //
+}
+.inputSize{
+    margin: 10px;
+}
