@@ -8,20 +8,22 @@ urlPhoto = "https://loremflickr.com/320/240/person";
 
 tag = ["python", "ajax", "github"];
 
-baseAllJquery(
-  "GET",
-  getTags,
-  "",
-  "",
-  "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json",
-  ""
-);
-
 //POST GET
 $(document).ready(() => {
   console.log("entranod a jqury");
   // baseAllJquery("POST", "", post_5, "", urlFirebase, "");
+
+  //poner usuarios
   baseAllJquery("GET", showUsers, "", ".list__usuarios", urlFirebase, "");
+  //poner tags
+  baseAllJquery(
+    "GET",
+    getTags,
+    "",
+    ".container__tags",
+    "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json",
+    ""
+  );
 
   $("#articuloss").on("click", ".btn-deletes", function () {
     // Do something on an existent or future .dynamicElement

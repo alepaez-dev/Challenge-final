@@ -62,8 +62,9 @@ const baseAllJquery = (method, funct, data, path, url, id) => {
   }
 };
 
-//obtener tags
-const getTags = response => {
+// obtener tags
+const getTags = (response, path) => {
+  console.log("entra a getTags");
   let arrayTags = [];
 
   Object.keys(response).forEach((key, index) => {
@@ -72,19 +73,22 @@ const getTags = response => {
 
     //agregando cada tag al arreglo
     arrayTags[index] = tag;
-  });
 
+    console.log("path", path);
+    console.log("tag: ", tag);
+    $(path).append(`<a href="#">#${tag}</a>`);
+  });
   console.log("arrayTags: ", arrayTags);
 };
 
-//poner tags
-const putTags = array.forEach(element => {});
 //showusers
 const showUsers = (response, path) => {
   let listrasusuarios = [];
   let listanueva = "";
   let imagenueva = "";
+  let arrayTags = [];
 
+  console.log("tags: ", arrayTags);
   // convertir object a pasar a arreglo
   for (user in response) {
     let usuar = response[user];
@@ -117,7 +121,8 @@ const showUsers = (response, path) => {
                                             </div>
                                             <div class="titulo-tags">
                                                 <h3>${element.title}</h3>
-                                                <a href="#">#${element.tag}</a>
+                                                <div class="container__tags"></div>
+                                                
                                             </div>
                                             <div class="iconos-botones-article d-flex flex-row justify-content-between align-items-baseline mt-3">
                                                 <div class="iconos-botones-iconos">
