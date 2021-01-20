@@ -1,51 +1,90 @@
 console.log("new user");
 
-$(document).ready(() => {
- /* 
- if($("#autorName").val() === null){
-     console.log("no se muestra boton")
-     $(".btnGuardar").hide()
- }
- else{
-     console.log("se muestra el boton")
- }
-$(".btnGuardar").hide()
-$("#autorName").keydown(event =>{
-    
-})
- if($("#autorName").val() === '' || $("#titleArticle").val()=== '' || $("#message").val()=== '' || $("#urlImage").val()=== '' || $("#minsToRead").val()=== '' ){
-      console.log("el boton no debe mostrarse hay un campo vacio")
-      $(".btnGuardar").hide()
-
-  }else{
-      console.log("algo en el aurotr")
-    $(".btnGuardar").show()
-  }
-
-//funcion de validacion de formulario
-window.onload = function(){
-//document.formularioPost.autorName.focus();
-document.formularioPost.addEventListener('submit',validarFormulario);
-}
-
-function validarFormulario(evObject){
-    evObject.preventDefault();
-    var todoCorrecto = true;
-    var formulario = document.form-horizontal;
-    for(let i=0; i< formulario.lenght;i++){
-        if(formulario[i].type == 'text'){
-            if(formulario[i].value == null || formulario.value.length ==0){
-                alert(formulario[i].name+'No puede estar vacio');
-                todoCorrecto=false;
+const baseAllJquery = (method, funct, data, path, url, id) => {
+  console.log("id: ", id);
+  if (method === "GET" || method === "DELETE") {
+    console.log("entro al if de GET y DELETE");
+    $.ajax({
+      url: url,
+      method: method,
+    })
+      .done(response => {
+        // console.log("response", response);
+        if (method === "GET") {
+          if (funct !== "") {
+            if (path !== "") {
+              funct(response, path);
+            } else {
+              funct(response);
             }
+          }
+        } else {
+          //DELETE
+          console.log("method: ", method);
+          console.log(response);
+          console.log("bbbbbbb", $(`#${id}`));
+          console.log("aaaaaa", $(`#${id}`));
+          $(`#${id}`).remove();
         }
-    }
-    if(todoCorrecto == true){
-        //formulario.submit();
-        console.log("todo correcto en el formulario")
-    }
+      })
+      .fail(() => {
+        console.log("todo mal");
+      });
+  } else {
+    //PATCH, POST, PUT
+    console.log("entro al if del POST, PATCH Y PUT");
+    $.ajax({
+      url: url,
+      method: method,
+      data: JSON.stringify(data),
+    })
+      .done(response => {
+        console.log(response);
+      })
+      .fail(err => {
+        console.log(err);
+        console.log(err.status);
+        console.log(err.statusText);
+        console.log("todo mal");
+      });
+  }
+};
+
+const getTags = (response, path) => {
+  console.log("entra a getTags");
+  let arrayTags = [];
+  Object.keys(response).forEach((key, index) => {
+    let tag = response[key].tag;
+    console.log("response tag:", response[key].tag);
+    //agregando cada tag al arreglo
+    arrayTags[index] = tag;
+    console.log("path", path);
+    console.log("tag: ", tag);
+    $(path).append(`<option>${tag}</option>`);
+  });
+  console.log("arrayTags: ", arrayTags);
 }
-*/
+
+
+
+
+
+$(document).ready(() => {
+//funcion que carga los tags desde la BD
+ //obtenerTags('GET','https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json');{
+    
+//}
+baseAllJquery(
+  "GET",
+  getTags,
+  "",
+  ".form-select-tags",
+  "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json",
+  ""
+);
+
+
+
 function validar(){
     console.log("entro a funcion de validar")
 let data = {
@@ -53,7 +92,8 @@ let data = {
       content: $("#message").val(),
       dateCreated: document.getElementById("dateCreation").value,
       minsToRead: $("#minsToRead").val(),
-      tag: "github, markdown, webdev, readme",
+      //tag:document.getElementsByClassName("form-select-tags").text,
+      //tag:$(".form-select-tags").val(),
       title: $("#titleArticle").val(),
       urlAuthor:$("#urlAuthor").val(),
       urlPhoto: $("#urlImage").val()
@@ -68,19 +108,6 @@ if(data.author==='' || data.content==='' || data.dateCreated==='' || data.minsTo
     return true
 }
 
-    /*if(miAutor.lenght ===null || miContent.length===null || miMins.length===null 
-    || miTitle.lenght===null
-    || miurlAutor.lenght===null
-    || miurlPhoto.lenght===null){
-        console.log("elemento vacio")
-        return false;
-        
-    }
-    else{
-        
-    return true;
-    }*/
-    
 }
 //
 
@@ -92,18 +119,16 @@ if(data.author==='' || data.content==='' || data.dateCreated==='' || data.minsTo
          console.log("EL RESULTADO DE LA FUNCION VALIDAR")
 
 
-let dataNewPost = {
+      let dataNewPost = {
       author: $("#autorName").val(),
       content: $("#message").val(),
       dateCreated: document.getElementById("dateCreation").value,
       minsToRead: $("#minsToRead").val(),
-      tag: "github, markdown, webdev, readme",
+      tag:document.getElementById("idSelect").value,
+      //tag: "github, markdown, webdev, readme",
       title: $("#titleArticle").val(),
       urlAuthor:$("#urlAuthor").val(),
       urlPhoto: $("#urlImage").val()
-      
-      
-      
     };
     
 
@@ -111,13 +136,10 @@ let dataNewPost = {
     creaNuevoPost(
       "POST",
       dataNewPost,"https://jsproyecto-97d25-default-rtdb.firebaseio.com/post/.json"
-      
-    );
-
-     }
+    ); }
     
       
-    redirectPage();
+    //redirectPage();
     //base de ale--
     //https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/.json
 
@@ -127,10 +149,10 @@ let dataNewPost = {
 });
 
 const creaNuevoPost = (method,data,url) =>{
-    console.log("entro a la funcion creaNuevoPost")
-    console.log("Metodo enviado:", method)
-    console.log("los datos:", data)
-    console.log("url enviado:", url)
+    //console.log("entro a la funcion creaNuevoPost")
+   // console.log("Metodo enviado:", method)
+   // console.log("los datos:", data)
+   // console.log("url enviado:", url)
 
     $.ajax({
         url: url,
@@ -150,9 +172,33 @@ const creaNuevoPost = (method,data,url) =>{
         //redirectPage()
 }
 
+
+const obtenerTags = (method,url)=>{
+  console.log("metodo enviado",method)
+  console.log("url enviado:", url)
+  console.log("entro a la funcion de obtener Tags")
+  let userTagsList ='';
+  let TagsEjemplo = ["phyton","c++","java","develop","ruby"];
+  let elSelect = document.getElementsByClassName(".form-select-tags")[0];
+  for(value in TagsEjemplo){
+    let optionTag = document.createElement("option1");
+    optionTag.text = array[value];
+    elSelect.add(option);
+  }
+
+}
+
+
+
+
+
 //redireccionar
 const redirectPage = () => {
     setTimeout(() => {
       window.location.replace("http://127.0.0.1:5502/index.html");
     }, 2000);
   };
+
+
+
+  
