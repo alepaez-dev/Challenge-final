@@ -77,6 +77,7 @@ const getTags = (response, path) => {
     console.log("path", path);
     console.log("tag: ", tag);
     $(path).append(`<a href="#">#${tag}</a>`);
+    $(".tags_container").append(`<li>#${tag}</li>`);
   });
   console.log("arrayTags: ", arrayTags);
 };

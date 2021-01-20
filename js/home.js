@@ -21,7 +21,7 @@ $(document).ready(() => {
 
   //poner usuarios
   baseAllJquery("GET", showUsers, "", ".list__usuarios", urlFirebase, "");
-  //poner tags
+  //poner tags en usuario
   baseAllJquery(
     "GET",
     getTags,
@@ -30,6 +30,16 @@ $(document).ready(() => {
     "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json",
     ""
   );
+
+  // //poner tags en tags
+  // baseAllJquery(
+  //   "GET",
+  //   getTags,
+  //   "",
+  //   ".tags_container",
+  //   "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json",
+  //   ""
+  // );
 
   $("#articuloss").on("click", ".btn-deletes", function () {
     // Do something on an existent or future .dynamicElement
