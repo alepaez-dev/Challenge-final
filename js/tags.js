@@ -74,9 +74,9 @@ const getTags = (response, path) => {
       tag: valInput,
     });
   } else if (aux !== 0) {
-    console.log("esta variable ya esta");
+    alert("esta variable ya esta");
   } else if (valInput === "") {
-    console.log("ingresa algo");
+    alert("ingresa algo");
   }
 };
 
