@@ -83,10 +83,6 @@ const showUsers = (response, path) => {
                                             <div class="titulo-tags">
                                                 <h3>${element.title}</h3>
                                                 <a href="#">#${element.tag}</a>
-                                                <a href="#">#software</a>
-                                                <a href="#">#improvement</a>
-                                                <a href="#">#kidding</a>
-                                                <a href="#">#sad</a>
                                             </div>
                                             <div
                                                 class="iconos-botones-article d-flex flex-row justify-content-between align-items-baseline mt-3">
