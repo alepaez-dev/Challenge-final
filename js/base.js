@@ -8,14 +8,18 @@ const baseAllJquery = (method, funct, data, path, url) => {
     })
       .done(response => {
         console.log("response", response);
-        if (funct !== "") {
-          if (path !== "") {
-            funct(response, path);
-          } else {
-            funct(response);
+        if (method === "GET") {
+          if (funct !== "") {
+            if (path !== "") {
+              funct(response, path);
+            } else {
+              funct(response);
+            }
           }
         } else {
+          //DELETE
           console.log(response);
+          // $(".bt")
         }
       })
       .fail(() => {
@@ -39,6 +43,16 @@ const baseAllJquery = (method, funct, data, path, url) => {
         console.log("todo mal");
       });
   }
+};
+
+//deleteuserbtns
+const deleteUserBtns = id => {
+  // id usuario
+  urlNow = `https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/${id}.json`;
+  console.log("url:", urlNow);
+  console.log("🚀 ~ file: base.js ~ line 61 ~ urlNow", urlNow);
+  console.log("se va a eliminar");
+  baseAllJquery("DELETE", "", "", "", urlNow);
 };
 
 //showusers
@@ -93,7 +107,7 @@ const showUsers = (response, path) => {
                                                 </div>
                                                 <div class="botones-der d-flex flex-row justify-content-between align-items-baseline">
                                                     <p>${element.minsToRead} read mins</p>
-                                                    <button class="btn-save">Eliminar</button>
+                                                    <button class="btn-save btn-deletes" id="${element._id}">Eliminar</button>
                                                 </div>
 
                                             </div>
