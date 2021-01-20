@@ -638,6 +638,11 @@ footer {
   }
 }
 
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF;
+}
+
 .bodyTags .marginForm {
   display: -webkit-box;
   display: -ms-flexbox;
