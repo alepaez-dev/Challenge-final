@@ -62,12 +62,13 @@ const baseAllJquery = (method, funct, data, path, url, id) => {
   }
 };
 
-// obtener tags
+//obtener tags
 const getTags = (response, path) => {
   console.log("entra a getTags");
   let arrayTags = [];
-
+  console.log("response.tag ", response.tag);
   Object.keys(response).forEach((key, index) => {
+    console.log("r");
     let tag = response[key].tag;
     console.log("response tag:", response[key].tag);
 
@@ -76,8 +77,8 @@ const getTags = (response, path) => {
 
     console.log("path", path);
     console.log("tag: ", tag);
-    $(path).append(`<a href="#">#${tag}</a>`);
-    $(".tags_container").append(`<li>#${tag}</li>`);
+    // $(path).append(`<a href="#">#${tag}</a>`);
+    $(path).append(`<li>#${tag}</li>`);
   });
   console.log("arrayTags: ", arrayTags);
 };
@@ -123,6 +124,7 @@ const showUsers = (response, path) => {
                                                 
                                                 <a href="user.html?id=${element._id}">
                                                 <h3 >${element.title}</h3>
+                                                <a>#${element.tag}</a>
                                                 </a>
                                                 
                                             </div>
