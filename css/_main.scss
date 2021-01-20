@@ -1,174 +1,173 @@
 .seccion-main {
-    .navbar {
-        position: relative;
-        background-color:transparent;
-        }
+  .navbar {
+    position: relative;
+    background-color: transparent;
+  }
 
-        .a-navbar{
-            background-color: transparent;
-            .image-coins{
-                position: absolute;
-                left:1%;
-                top: 28%;
-                font-size: 25px;
-            }
-            .navbar-posts {
-                font-weight: bold;
-                color: black;
-            }
-        }
-
-        .a-navbar-der {
-            background-color: transparent;
-            .btn-feed {
-                position: relative;
-                border: none;
-                border:$btn-feed-border;
-                border-radius: 2px;
-                background-color:$btn-feed-bg;
-                color: black;
-                width: 100px;
-                height: 40px;
-                text-align: left;
-
-                .btn-feed-flecha {
-                    background-color: transparent;
-                    position: absolute;
-                    left: 80%;
-                }
-
-                .dropdown-menu {
-                    border: black;
-                    .dropdown-item {
-                        text-align: center;
-                        border-bottom: 1px solid rgb(194, 192, 192);
-                        border-radius: 5px;
-                    }
-                }
-            }
-            .navbar-mdsize {
-                width: 330px;
-                a {
-                    padding: 9px 4px 9px 4px;
-                    font-size: 16px;
-                    color: black;
-                    text-decoration: none;
-                    border-radius: 2px;
-
-                    &:hover {
-                        //background-color: $navbar-hover-bg;
-                        box-shadow: 0px 3px 20px 10px rgba(0,0,0,0.11);
-                        border-bottom: 2px solid blue;
-                    }
-                }
-                
-            }
-            .image-rayito {
-                font-size: 30px;
-                position: absolute;
-                right: 2%;
-                top: 25%;
-        }
+  .a-navbar {
+    background-color: transparent;
+    .image-coins {
+      position: absolute;
+      left: 1%;
+      top: 28%;
+      font-size: 25px;
     }
-    .imagen-main {
-        background-color: white;
-        border-radius: 10px;
-        align-self: center;
-        .imagen-principal {
-            width: 80%;
-            margin: auto;
-            padding: 10px;
-            align-self: center;
-        }
+    .navbar-posts {
+      font-weight: bold;
+      color: black;
     }
+  }
 
-    .article-main {
-        border: 1px solid rgb(219, 216, 216);
-        border-radius: 10px;
-        background-color: white;
-        padding: 10px;
+  .a-navbar-der {
+    background-color: transparent;
+    .btn-feed {
+      position: relative;
+      border: none;
+      border: $btn-feed-border;
+      border-radius: 2px;
+      background-color: $btn-feed-bg;
+      color: black;
+      width: 100px;
+      height: 40px;
+      text-align: left;
+
+      .btn-feed-flecha {
+        background-color: transparent;
+        position: absolute;
+        left: 80%;
+      }
+
+      .dropdown-menu {
+        border: black;
+        .dropdown-item {
+          text-align: center;
+          border-bottom: 1px solid rgb(194, 192, 192);
+          border-radius: 5px;
+        }
+      }
+    }
+    .navbar-mdsize {
+      width: 330px;
+      a {
+        padding: 9px 4px 9px 4px;
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+        border-radius: 2px;
 
         &:hover {
-            box-shadow: 0px 3px 20px 10px rgba(0,0,0,0.15);
+          //background-color: $navbar-hover-bg;
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.11);
+          border-bottom: 2px solid blue;
         }
-        .iconos-article {
-            background-color: white;
-            .icono-article {
-                width :40px;
-                border-radius: 20px;
-            }
-        }
-        .article-info {
-            background-color: white;
-            width: 100%;
-            .nombre-fecha{
-                background-color: white;
-                color: $nombre-fecha-color;
-                .nombre-article{
-                    background-color: white;
-                    font-weight: bold;
-                    line-height: 0.3cm;
-                    font-size: 14px;
-                }
-                .fecha-article {
-                    background-color: white;
-                    font-size: 11px;
-                }
-            }
-            .titulo-tags {
-                background-color: white;
-                h3 {
-                    background-color: white;
-                    color: black;
-                    &:hover {
-                        color: blue;
-                    }
-                }
-                a {
-                    background-color: white;
-                    color: grey;
-                    text-decoration: none;
-                    
-                    &:hover {
-                        color: black;
-                    }
-                }
-            }
-
-            .iconos-botones-article {
-                background-color: white;
-                .iconos-botones-iconos {
-                    background-color: white;
-                    .far {
-                        background-color: white;
-                    }
-                }
-                .botones-der {
-                    background-color: white;
-                    width: 50%;
-                    p {
-                        background-color: white;
-                        color: grey;
-                        width: 60%;
-                        
-                        &:hover {
-                            color: black;
-                        }
-                    }
-                    .btn-save {
-                        background-color: white;
-                        background-color: rgb(209, 207, 207);
-                        border: none;
-                        border-radius: 7px;
-                        width: 70px;
-                        height: 30px;
-                        &:hover {
-                            box-shadow: 0px 3px 20px 10px rgba(0,0,0,0.07);
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
-}
+    .image-rayito {
+      font-size: 30px;
+      position: absolute;
+      right: 2%;
+      top: 25%;
+    }
+  }
+  .imagen-main {
+    background-color: white;
+    border-radius: 10px;
+    align-self: center;
+    .imagen-principal {
+      width: 80%;
+      margin: auto;
+      padding: 10px;
+      align-self: center;
+    }
+  }
 
+  .article-main {
+    border: 1px solid rgb(219, 216, 216);
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+
+    &:hover {
+      box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
+    }
+    .iconos-article {
+      background-color: white;
+      .icono-article {
+        width: 40px;
+        border-radius: 20px;
+      }
+    }
+    .article-info {
+      background-color: white;
+      width: 100%;
+      .nombre-fecha {
+        background-color: white;
+        color: $nombre-fecha-color;
+        .nombre-article {
+          background-color: white;
+          font-weight: bold;
+          line-height: 0.3cm;
+          font-size: 14px;
+        }
+        .fecha-article {
+          background-color: white;
+          font-size: 11px;
+        }
+      }
+      .titulo-tags {
+        background-color: white;
+        h3 {
+          background-color: white;
+          color: black;
+          &:hover {
+            color: blue;
+          }
+        }
+        a {
+          background-color: white;
+          color: grey;
+          text-decoration: none;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+
+      .iconos-botones-article {
+        background-color: white;
+        .iconos-botones-iconos {
+          background-color: white;
+          .far {
+            background-color: white;
+          }
+        }
+        .botones-der {
+          background-color: white;
+          width: 50%;
+          p {
+            background-color: white;
+            color: grey;
+            width: 60%;
+
+            &:hover {
+              color: black;
+            }
+          }
+          .btn-save {
+            // background-color: white;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 7px;
+            width: 70px;
+            height: 30px;
+            &:hover {
+              box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -73,6 +73,7 @@
 
   .article-main {
     border-radius: 10px;
+    // background-color: $article-main-bg;
     background-color: $article-main-bg;
     padding: 10px;
 
@@ -124,9 +125,9 @@
             }
           }
           .btn-save {
-            background-color: rgb(209, 207, 207);
+            background-color: rgba(190, 29, 29, 0.568);
             border: none;
-            border-radius: 7px;
+            border-radius: 10px;
             width: 70px;
             height: 30px;
             &:hover {

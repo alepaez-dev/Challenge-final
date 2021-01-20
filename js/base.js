@@ -84,18 +84,16 @@ const showUsers = (response, path) => {
                                                 <h3>${element.title}</h3>
                                                 <a href="#">#${element.tag}</a>
                                             </div>
-                                            <div
-                                                class="iconos-botones-article d-flex flex-row justify-content-between align-items-baseline mt-3">
+                                            <div class="iconos-botones-article d-flex flex-row justify-content-between align-items-baseline mt-3">
                                                 <div class="iconos-botones-iconos">
                                                     <i class="far fa-heart"></i>
                                                     8
                                                     <i class="far fa-comment ml-2"></i>
                                                     3
                                                 </div>
-                                                <div
-                                                    class="botones-der d-flex flex-row justify-content-between align-items-baseline">
-                                                    <p>${element.minsToRead} read</p>
-                                                    <button class="btn-save">Save</button>
+                                                <div class="botones-der d-flex flex-row justify-content-between align-items-baseline">
+                                                    <p>${element.minsToRead} read mins</p>
+                                                    <button class="btn-save">Eliminar</button>
                                                 </div>
 
                                             </div>
