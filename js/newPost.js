@@ -135,11 +135,11 @@ if(data.author==='' || data.content==='' || data.dateCreated==='' || data.minsTo
 
     creaNuevoPost(
       "POST",
-      dataNewPost,"https://jsproyecto-97d25-default-rtdb.firebaseio.com/post/.json"
+      dataNewPost,"https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/.json"
     ); }
     
       
-    //redirectPage();
+    redirectPage();
     //base de ale--
     //https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/.json
 
