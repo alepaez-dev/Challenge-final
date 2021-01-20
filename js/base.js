@@ -1,13 +1,27 @@
+//deleteuserbtns
+const deleteUserBtns = id => {
+  // id usuario
+  console.log("id: ", id);
+  let nuevoid = id;
+  console.log("nuevo id: ", nuevoid);
+  urlNow = `https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/${id}.json`;
+  console.log("url:", urlNow);
+  console.log("🚀 ~ file: base.js ~ line 61 ~ urlNow", urlNow);
+  console.log("se va a eliminar");
+  baseAllJquery("DELETE", "", "", "", urlNow, nuevoid);
+};
+
 //basealljquery
-const baseAllJquery = (method, funct, data, path, url) => {
+const baseAllJquery = (method, funct, data, path, url, id) => {
+  console.log("id: ", id);
   if (method === "GET" || method === "DELETE") {
-    console.log("entro al if de GET");
+    console.log("entro al if de GET y DELETE");
     $.ajax({
       url: url,
       method: method,
     })
       .done(response => {
-        console.log("response", response);
+        // console.log("response", response);
         if (method === "GET") {
           if (funct !== "") {
             if (path !== "") {
@@ -18,8 +32,11 @@ const baseAllJquery = (method, funct, data, path, url) => {
           }
         } else {
           //DELETE
+          console.log("method: ", method);
           console.log(response);
-          // $(".bt")
+          console.log("bbbbbbb", $(`#${id}`));
+          console.log("aaaaaa", $(`#${id}`));
+          $(`#${id}`).remove();
         }
       })
       .fail(() => {
@@ -45,16 +62,23 @@ const baseAllJquery = (method, funct, data, path, url) => {
   }
 };
 
-//deleteuserbtns
-const deleteUserBtns = id => {
-  // id usuario
-  urlNow = `https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/${id}.json`;
-  console.log("url:", urlNow);
-  console.log("🚀 ~ file: base.js ~ line 61 ~ urlNow", urlNow);
-  console.log("se va a eliminar");
-  baseAllJquery("DELETE", "", "", "", urlNow);
+//obtener tags
+const getTags = response => {
+  let arrayTags = [];
+
+  Object.keys(response).forEach((key, index) => {
+    let tag = response[key].tag;
+    console.log("response tag:", response[key].tag);
+
+    //agregando cada tag al arreglo
+    arrayTags[index] = tag;
+  });
+
+  console.log("arrayTags: ", arrayTags);
 };
 
+//poner tags
+const putTags = array.forEach(element => {});
 //showusers
 const showUsers = (response, path) => {
   let listrasusuarios = [];
@@ -75,15 +99,12 @@ const showUsers = (response, path) => {
 
   //agregar
   listrasusuarios.forEach((element, index) => {
-    console.log(element);
-    console.log(element.dateCreated);
-    console.log(element._id);
     if (index === 0) {
       imagenueva = `<img class="imagen-principal" src="${element.urlPhoto}" alt="">`;
     }
 
-    listanueva += `<a href="user.html?id=${element._id}">
-                                    <article class="article-main d-flex m-1">
+    listanueva += `<article class="article-main d-flex m-1" data-img="${element.urlPhoto}" id="${element._id}">
+    <a href="user.html?id=${element._id}">
                                         <div class="iconos-article mr-2">
                                             <img class="icono-article" src="${element.urlAuthor}" alt="">
                                         </div>
@@ -107,13 +128,12 @@ const showUsers = (response, path) => {
                                                 </div>
                                                 <div class="botones-der d-flex flex-row justify-content-between align-items-baseline">
                                                     <p>${element.minsToRead} read mins</p>
-                                                    <button class="btn-save btn-deletes" id="${element._id}">Eliminar</button>
+                                                    <button class="btn-save btn-deletes" data-id="${element._id}">Eliminar</button>
                                                 </div>
-
                                             </div>
                                         </div>
-                                    </article>
-                                </a>`;
+                                        </a>
+                                    </article>`;
   });
 
   //   for (user in response) {
@@ -162,7 +182,6 @@ const showUsers = (response, path) => {
   //   }
   $(path).append(listanueva);
   $(".img-new").append(imagenueva);
-  //   deleteUserBtns();
 };
 
 //printuser
