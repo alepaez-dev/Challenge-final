@@ -288,6 +288,11 @@ header.sticky {
 }
 
 .seccion-main .article-main .article-info .nombre-fecha {
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90%;
   color: #504e4e;
 }
 
@@ -315,9 +320,9 @@ header.sticky {
 }
 
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save {
-  background-color: #d1cfcf;
+  background-color: rgba(190, 29, 29, 0.568);
   border: none;
-  border-radius: 7px;
+  border-radius: 10px;
   width: 70px;
   height: 30px;
 }
@@ -405,7 +410,7 @@ a#h-sad {
   position: -webkit-sticky;
   position: sticky;
   top: 50px;
-  background-color: #EEF0F1;
+  background-color: #eef0f1;
   height: 100px;
   width: 100%;
 }
@@ -430,7 +435,7 @@ a#h-sad {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: #EEF0F1;
+    background-color: #eef0f1;
   }
   .aside-abajo .div-aside-1 .iconos-aside-1 {
     height: 70%;
@@ -448,7 +453,7 @@ a#h-sad {
 .aside-derecha .div-1-aside-2 {
   width: 95%;
   margin: auto;
-  background-color: #F9FAFA;
+  background-color: #f9fafa;
   border: 1px solid #e7e1e1;
   border-radius: 6px;
 }

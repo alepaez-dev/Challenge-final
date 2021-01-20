@@ -211,7 +211,13 @@ body hr {
   border: 1px solid #dbd8d8;
   border-radius: 10px;
   background-color: white;
-  padding: 10px;
+  padding: 3%;
+  width: 100%;
+}
+
+.seccion-main .article-main a {
+  width: 100%;
+  z-index: 0;
 }
 
 .seccion-main .article-main:hover {
@@ -301,9 +307,10 @@ body hr {
 }
 
 .seccion-main .article-main .article-info .iconos-botones-article .botones-der .btn-save {
-  background-color: white;
-  background-color: #d1cfcf;
+  z-index: 100;
+  background-color: #007bff;
   border: none;
+  color: white;
   border-radius: 7px;
   width: 70px;
   height: 30px;

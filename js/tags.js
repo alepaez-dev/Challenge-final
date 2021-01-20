@@ -50,7 +50,7 @@ const baseAllJquery = (method, funct, data, path, url, id) => {
 };
 // obtener tags
 const getTags = (response, path) => {
-    let valInput = $("#tagname").val()
+    let valInput = $("#tagname").val();
     console.log("entra a getTags");
     let arrayTags = [];
     Object.keys(response).forEach((key, index) => {
