@@ -5,22 +5,50 @@
         
         justify-content: center;
         .card-body{
-            
+            h1{
+                text-align: center;
+            }
             ul{
                 
                 display:flex;
                 justify-content: center;
                 li{
-                    margin: 10px;
+                    margin: 5px;
                     list-style: none;
                     padding: 3px;
                     background-color:rgb(99, 92, 158);
                     color: white;
                     border-radius: 3px;
-                    text-align: center;
+                    btn btn-primary{
+                        justify-content: center;
+                    }
                     
                 }
             }
+            
+        }
+        .card-body2{
+            h1{
+                text-align: center;
+            }
+            ul{
+                
+                display:flex;
+                justify-content: center;
+                li{
+                    margin: 5px;
+                    list-style: none;
+                    padding: 3px;
+                    background-color:rgb(99, 92, 158);
+                    color: white;
+                    border-radius: 3px;
+                    btn btn-primary{
+                        justify-content: center;
+                    }
+                    
+                }
+            }
+            
         }
         
     }

@@ -4,6 +4,6 @@ $(document).ready(function () {
     $("#tagsFormat").click(function () {
         console.log("boton activado")
         $("#tagsFormat").css("color","red")
-        window.location.pathname = '/myTags.html'
+        window.location.pathname = '/formTags.html'
     })
 })

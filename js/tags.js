@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    console.log("ya estas dentro de la pagina de tags")
-       
-  
+    console .log("listo")
+    $("button").click(function(){
+        
+    })
 })
