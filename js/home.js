@@ -11,7 +11,7 @@ let post_1 = {
   content: `You may think a career is an old fashioned concept out of the 80s which could be safely ignored. I sure used to… I thought a career was for banking professionals in suits, not for me! I was young and cool and wanted to work for a living, of course, but I couldn't care less about climbing up the career ladder. Well, I changed my mind.`,
   dateCreated: new Date("2020-03-02").toISOString().slice(0, 10),
   minsToRead: "1",
-  tag: "tag",
+  tag: "github, markdown, webdev, readme",
   title: "How to Ruin Your Career in 4 Easy Steps!!",
   urlAuthor: "/assets/article-image-1.jpeg",
   urlPhoto: "/assets/imagen-main-2.png",
@@ -24,9 +24,8 @@ let post_2 = {
   dateCreated: new Date("2018-02-02").toISOString().slice(0, 10),
   minsToRead: "12",
   tag: "tag",
-  title: "Why Tailwind Isn't for Me!!",
-  urlAuthor:
-    "https://res.cloudinary.com/practicaldev/image/fetch/s--Ea1OGrCb--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1/f451a206-11c8-4e3d-8936-143d0a7e65bb.png",
+  title: "webdev, css, javascript, html",
+  urlAuthor: "/assets/article-image-2.jpg",
   urlPhoto: "https://dev.to/social_previews/article/573028.png",
 };
 
@@ -36,10 +35,9 @@ let post_3 = {
     "Cumulative layout shift is the term that refers to content that jumps after initial load.  Not only i...",
   dateCreated: new Date("2016-03-02").toISOString().slice(0, 10),
   minsToRead: "60",
-  tag: "tag",
+  tag: "github, markdown, webdev, readme",
   title: "Fixing Cumulative Layout Shift",
-  urlAuthor:
-    "https://res.cloudinary.com/practicaldev/image/fetch/s--wFKC0VlN--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/552620/1529d884-64fa-4a05-91a5-336c12488537.jpeg",
+  urlAuthor: "/assets/article-image-3.png",
   urlPhoto:
     "https://res.cloudinary.com/practicaldev/image/fetch/s--mhUvOpdy--/c_imagga_scale,f_auto,fl_progressive,h_500,q_66,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/v91nxntizymsobq46ug6.gif",
 };
@@ -49,10 +47,9 @@ let post_4 = {
   content: "Creating a Killer GitHub Profile README Part 1",
   dateCreated: new Date("2017-03-02").toISOString().slice(0, 10),
   minsToRead: "12",
-  tag: "tag",
+  tag: "webdev, css, javascript, html",
   title: "I wrote a free book on React.js and just made it available on GitHub",
-  urlAuthor:
-    "https://res.cloudinary.com/practicaldev/image/fetch/s--msnEy5xT--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/487155/d537e5be-04cd-45cd-9746-24ec189f53d9.jpeg",
+  urlAuthor: "/assets/article-image-5.jpeg",
   urlPhoto:
     "https://res.cloudinary.com/practicaldev/image/fetch/s--wFKC0VlN--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/552620/1529d884-64fa-4a05-91a5-336c12488537.jpeg",
 };
@@ -75,6 +72,6 @@ let post_5 = {
 //POST GET
 $(document).ready(() => {
   console.log("entranod a jqury");
-  // baseAllJquery("POST", "", post_1, "", urlFirebase);
+  // baseAllJquery("POST", "", post_5, "", urlFirebase);
   baseAllJquery("GET", showUsers, "", ".list__usuarios", urlFirebase);
 });

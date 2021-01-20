@@ -176,7 +176,7 @@ const printUser = (response, path) => {
                                         </h5>
                                     </div>
                                     
-                                </div>a
+                                </div>
                                 <div class="parrafo-article-2 mt-3">
                                     <p class="parrafo-cursiva">
                                         May 17 <i>Originally published at <strong>Medium</strong>. Updated on ${response.dateCreated}.</i><br> ${response.minsToRead} min read

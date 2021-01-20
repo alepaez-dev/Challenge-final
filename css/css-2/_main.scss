@@ -1,209 +1,209 @@
 .seccion-main {
-    border: 1px solid rgb(204, 199, 199);
-    border-radius: 5px;
-    background-color: white;
-    text-align: justify;
-    
-    .navbar {
-        position: relative;
-        background-color:$navbar-color;
-        }
+  border: 1px solid rgb(204, 199, 199);
+  border-radius: 5px;
+  background-color: white;
+  text-align: justify;
 
-        .a-navbar{
-            .image-coins{
-                position: absolute;
-                left:1%;
-                top: 28%;
-                font-size: 25px;
-            }
-            .navbar-posts {
-                font-weight: bold;
-                color: black;
-            }
-        }
+  .navbar {
+    position: relative;
+    background-color: $navbar-color;
+  }
 
-        .a-navbar-der {
-            .btn-feed {
-                position: relative;
-                border: none;
-                border:$btn-feed-border;
-                border-radius: 2px;
-                background-color:$btn-feed-bg;
-                color: black;
-                width: 100px;
-                height: 40px;
-                text-align: left;
-                .btn-feed-flecha {
-                    position: absolute;
-                    left: 80%;
-                }
-            }
-            .navbar-mdsize {
-                width: 330px;
-                a {
-                    padding: 9px 4px 9px 4px;
-                    font-size: 16px;
-                    color: black;
-                    text-decoration: none;
-
-                    &:hover {
-                        //background-color: $navbar-hover-bg;
-                        box-shadow: 0px 3px 20px 10px rgba(0,0,0,0.11);
-                        border-bottom: 2px solid blue;
-                    }
-                }
-                
-            }
-            .image-rayito {
-                font-size: 30px;
-                position: absolute;
-                right: 2%;
-                top: 25%;
-        }
+  .a-navbar {
+    .image-coins {
+      position: absolute;
+      left: 1%;
+      top: 28%;
+      font-size: 25px;
     }
-    .imagen-main {
+    .navbar-posts {
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .a-navbar-der {
+    .btn-feed {
+      position: relative;
+      border: none;
+      border: $btn-feed-border;
+      border-radius: 2px;
+      background-color: $btn-feed-bg;
+      color: black;
+      width: 100px;
+      height: 40px;
+      text-align: left;
+      .btn-feed-flecha {
+        position: absolute;
+        left: 80%;
+      }
+    }
+    .navbar-mdsize {
+      width: 330px;
+      a {
+        padding: 9px 4px 9px 4px;
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+          //background-color: $navbar-hover-bg;
+          box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.11);
+          border-bottom: 2px solid blue;
+        }
+      }
+    }
+    .image-rayito {
+      font-size: 30px;
+      position: absolute;
+      right: 2%;
+      top: 25%;
+    }
+  }
+  .imagen-main {
+    align-self: center;
+    .imagen-principal {
+      border: none;
+      width: 100%;
+      margin: auto;
+      padding: 10px;
+      align-self: center;
+    }
+  }
+
+  .article-main {
+    border-radius: 10px;
+    background-color: $article-main-bg;
+    padding: 10px;
+
+    .titulo-tags {
+      a {
+        line-height: 1cm;
+        color: grey;
+        text-decoration: none;
+        border-radius: 5px;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+
+    .iconos-article {
+      .icono-article {
+        width: 40px;
+        border-radius: 20px;
+      }
+    }
+    .article-info {
+      width: 60%;
+      .nombre-fecha {
+        margin: auto;
         align-self: center;
-        .imagen-principal {
-            border: none;
-            width: 100%;
-            margin: auto;
-            padding: 10px;
-            align-self: center;
+        width: 90%;
+        color: $nombre-fecha-color;
+        .nombre-article {
+          font-weight: bold;
+          line-height: 0.3cm;
+          font-size: 14px;
         }
-    }
+        .fecha-article {
+          font-size: 11px;
+        }
+      }
 
-    .article-main {
-        border-radius: 10px;
-        background-color: $article-main-bg;
-        padding: 10px;
-
-        .titulo-tags {
-            a {
-                line-height: 1cm;
-                color: grey;
-                text-decoration: none;
-                border-radius: 5px;
-                
-                &:hover {
-                    color: black;
-                }
-            }
-        }
-
-        .iconos-article {
-            .icono-article {
-                width :40px;
-                border-radius: 20px;
-            }
-        }
-        .article-info {
-            width: 60%;
-            .nombre-fecha{
-                color: $nombre-fecha-color;
-                .nombre-article{
-                    font-weight: bold;
-                    line-height: 0.3cm;
-                    font-size: 14px;
-                }
-                .fecha-article {
-                    font-size: 11px;
-                }
-            }
-            
-            .iconos-botones-article {
-                .botones-der {
-                    width: 50%;
-                    p {
-                        color: grey;
-                        width: 60%;
-                        
-                        &:hover {
-                            color: black;
-                        }
-                    }
-                    .btn-save {
-                        background-color: rgb(209, 207, 207);
-                        border: none;
-                        border-radius: 7px;
-                        width: 70px;
-                        height: 30px;
-                        &:hover {
-                            box-shadow: 0px 3px 20px 10px rgba(0,0,0,0.07);
-                        }
-                    }
-                }
-            }
-        }
-        .parrafo-article-2 {
-            .parrafo-cursiva {
-                font-size: 14px;
-                color: rgb(128, 126, 126);
-                strong {
-                    color: rgb(59, 59, 151);
-                }
-            }
-        }
-    }
-    
-    .info-article {
-        padding: 20px;
-
-        .imagenes-pag-2 {
-            padding: 0px;
-            width: 100%;
-        }
-        .imagen-bot {
-            font-size: 12px;
+      .iconos-botones-article {
+        .botones-der {
+          width: 50%;
+          p {
             color: grey;
-            font-style: italic;
+            width: 60%;
+
+            &:hover {
+              color: black;
+            }
+          }
+          .btn-save {
+            background-color: rgb(209, 207, 207);
+            border: none;
+            border-radius: 7px;
+            width: 70px;
+            height: 30px;
+            &:hover {
+              box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.07);
+            }
+          }
         }
-        .parrafo-izq-border {
-            border-left: 10px solid grey;
-        }
+      }
     }
+    .parrafo-article-2 {
+      .parrafo-cursiva {
+        font-size: 14px;
+        color: rgb(128, 126, 126);
+        strong {
+          color: rgb(59, 59, 151);
+        }
+      }
+    }
+  }
 
+  .info-article {
+    padding: 20px;
 
+    .imagenes-pag-2 {
+      padding: 0px;
+      width: 100%;
+    }
+    .imagen-bot {
+      font-size: 12px;
+      color: grey;
+      font-style: italic;
+    }
+    .parrafo-izq-border {
+      border-left: 10px solid grey;
+    }
+  }
 }
 // ids
 a#h-web {
-    background-color: black;
-    color: pink;
-    padding: 5px;
+  background-color: black;
+  color: pink;
+  padding: 5px;
 }
 a#h-software {
-    background-color: blue;
-    color: yellow;
-    padding: 5px;
+  background-color: blue;
+  color: yellow;
+  padding: 5px;
 }
 a#h-improvement {
-    background-color:#8fb68d;
-    color: black;
-    padding: 5px;
+  background-color: #8fb68d;
+  color: black;
+  padding: 5px;
 }
 a#h-kidding {
-    background-color:#009999;
-    color: white; 
-    padding: 5px;
+  background-color: #009999;
+  color: white;
+  padding: 5px;
 }
 a#h-sad {
-    background-color: rgb(116, 33, 33);
-    color: white;  
-    padding: 5px;
+  background-color: rgb(116, 33, 33);
+  color: white;
+  padding: 5px;
 }
 
 @media only screen and(min-width:768px) {
-    .seccion-main{
-        .article-main {
-            .titulo-tags{
-                a{
-                    padding: 5px 10px 5px 10px;
-                }
-            }
-            text-align: center;
-            .article-info {
-                margin: auto;
-                //width: none;
-            }
+  .seccion-main {
+    .article-main {
+      .titulo-tags {
+        a {
+          padding: 5px 10px 5px 10px;
         }
+      }
+      text-align: center;
+      .article-info {
+        margin: auto;
+        //width: none;
+      }
     }
+  }
 }

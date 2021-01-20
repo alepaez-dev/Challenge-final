@@ -288,6 +288,11 @@ header.sticky {
 }
 
 .seccion-main .article-main .article-info .nombre-fecha {
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90%;
   color: #504e4e;
 }
 
