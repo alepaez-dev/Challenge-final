@@ -9,7 +9,8 @@
         "_main.scss",
         "_aside-1.scss",
         "_aside-2.scss",
-        "_aside-pag2.scss"
+        "_aside-pag2.scss",
+        "_newPost.scss"
     ],
     "names": [],
     "file": "style-pagina-2.css"
