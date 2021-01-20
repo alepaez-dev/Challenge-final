@@ -119,9 +119,8 @@ const showUsers = (response, path) => {
                                                 </h5>
                                                 <p class="fecha-article">${element.dateCreated}</p>
                                             </div>
-                                            <div class="titulo-tags">
+                                            <div class="titulo-tags container__tags">
                                                 <h3>${element.title}</h3>
-                                                <div class="container__tags"></div>
                                                 
                                             </div>
                                             <div class="iconos-botones-article d-flex flex-row justify-content-between align-items-baseline mt-3">
