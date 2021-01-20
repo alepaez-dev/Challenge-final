@@ -6,12 +6,10 @@ urlFirebase =
 urlImg = "https://loremflickr.com/320/240/person";
 urlPhoto = "https://loremflickr.com/320/240/person";
 
-tag = ["python", "ajax", "github"];
-
 //POST GET
 $(document).ready(() => {
   console.log("entranod a jqury");
-  // baseAllJquery("POST", "", post_5, "", urlFirebase, "");
+  // baseAllJquery("POST", "", post_5, "", "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json", "");
 
   //poner usuarios
   baseAllJquery("GET", showUsers, "", ".list__usuarios", urlFirebase, "");
