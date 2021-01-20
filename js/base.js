@@ -107,8 +107,7 @@ const showUsers = (response, path) => {
       imagenueva = `<img class="imagen-principal" src="${element.urlPhoto}" alt="">`;
     }
 
-    listanueva += `<article class="article-main d-flex m-1" data-img="${element.urlPhoto}" id="${element._id}">
-    <a href="user.html?id=${element._id}">
+    listanueva += `<article  class="article-main d-flex m-1" data-img="${element.urlPhoto}" id="${element._id}">
                                         <div class="iconos-article mr-2">
                                             <img class="icono-article" src="${element.urlAuthor}" alt="">
                                         </div>
@@ -120,7 +119,10 @@ const showUsers = (response, path) => {
                                                 <p class="fecha-article">${element.dateCreated}</p>
                                             </div>
                                             <div class="titulo-tags container__tags">
-                                                <h3>${element.title}</h3>
+                                                
+                                                <a href="user.html?id=${element._id}">
+                                                <h3 >${element.title}</h3>
+                                                </a>
                                                 
                                             </div>
                                             <div class="iconos-botones-article d-flex flex-row justify-content-between align-items-baseline mt-3">
@@ -136,7 +138,6 @@ const showUsers = (response, path) => {
                                                 </div>
                                             </div>
                                         </div>
-                                        </a>
                                     </article>`;
   });
 
