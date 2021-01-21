@@ -649,7 +649,13 @@ footer {
 
 .bigicon {
   font-size: 35px;
-  color: #36A0FF;
+  color: #36a0ff;
+}
+
+legend {
+  color: #36a0ff;
+  font-size: 27px;
+  margin-left: 190px;
 }
 
 .bodyTags .marginForm {
