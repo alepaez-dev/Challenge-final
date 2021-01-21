@@ -63,142 +63,129 @@ const getTags = (response, path) => {
     $(path).append(`<option>${tag}</option>`);
   });
   console.log("arrayTags: ", arrayTags);
-}
-
-
-
-
+};
 
 $(document).ready(() => {
-//funcion que carga los tags desde la BD
- //obtenerTags('GET','https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json');{
-    
-//}
-baseAllJquery(
-  "GET",
-  getTags,
-  "",
-  ".form-select-tags",
-  "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json",
-  ""
-);
+  //funcion que carga los tags desde la BD
+  //obtenerTags('GET','https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json');{
 
+  //}
+  baseAllJquery(
+    "GET",
+    getTags,
+    "",
+    ".form-select-tags",
+    "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json",
+    ""
+  );
 
-
-function validar(){
-    console.log("entro a funcion de validar")
-let data = {
-    author: $("#autorName").val(),
+  function validar() {
+    console.log("entro a funcion de validar");
+    let data = {
+      author: $("#autorName").val(),
       content: $("#message").val(),
       dateCreated: document.getElementById("dateCreation").value,
       minsToRead: $("#minsToRead").val(),
       //tag:document.getElementsByClassName("form-select-tags").text,
       //tag:$(".form-select-tags").val(),
       title: $("#titleArticle").val(),
-      urlAuthor:$("#urlAuthor").val(),
-      urlPhoto: $("#urlImage").val()
-
-}
-if(data.author==='' || data.content==='' || data.dateCreated==='' || data.minsToRead===''
-|| data.tag==='' || data.title==='' || data.urlAuthor==='' || data.urlPhoto===''){
-    console.log("HAY UN ELEMENTO VACIO")
-    alert("HAY UN CAMPO VACIO")
-}else{
-    console.log("todos los campos llenos")
-    return true
-}
-
-}
-//
-
+      urlAuthor: $("#urlAuthor").val(),
+      urlPhoto: $("#urlImage").val(),
+    };
+    if (
+      data.author === "" ||
+      data.content === "" ||
+      data.dateCreated === "" ||
+      data.minsToRead === "" ||
+      data.tag === "" ||
+      data.title === "" ||
+      data.urlAuthor === "" ||
+      data.urlPhoto === ""
+    ) {
+      console.log("HAY UN ELEMENTO VACIO");
+      alert("HAY UNO O MAS CAMPOS VACIOS");
+    } else {
+      console.log("todos los campos llenos");
+      redirectPage();
+      return true;
+    }
+  }
+  //
 
   $(".btnGuardar").click(event => {
     event.preventDefault;
     console.log("entra al boton click");
-     if(validar()){
-         console.log("EL RESULTADO DE LA FUNCION VALIDAR")
-
+    if (validar()) {
+      console.log("EL RESULTADO DE LA FUNCION VALIDAR");
 
       let dataNewPost = {
-      author: $("#autorName").val(),
-      content: $("#message").val(),
-      dateCreated: document.getElementById("dateCreation").value,
-      minsToRead: $("#minsToRead").val(),
-      tag:document.getElementById("idSelect").value,
-      //tag: "github, markdown, webdev, readme",
-      title: $("#titleArticle").val(),
-      urlAuthor:$("#urlAuthor").val(),
-      urlPhoto: $("#urlImage").val()
-    };
-    
+        author: $("#autorName").val(),
+        content: $("#message").val(),
+        dateCreated: document.getElementById("dateCreation").value,
+        minsToRead: $("#minsToRead").val(),
+        tag: document.getElementById("idSelect").value,
+        //tag: "github, markdown, webdev, readme",
+        title: $("#titleArticle").val(),
+        urlAuthor: $("#urlAuthor").val(),
+        urlPhoto: $("#urlImage").val(),
+      };
 
+      creaNuevoPost(
+        "POST",
+        dataNewPost,
+        "https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/.json"
+      );
+    }
 
-    creaNuevoPost(
-      "POST",
-      dataNewPost,"https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/.json"
-    ); }
-    
-      
-    redirectPage();
     //base de ale--
     //https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/.json
 
-        //base de lily
+    //base de lily
     //`https://jsproyecto-97d25-default-rtdb.firebaseio.com/post/.json`
   });
 });
 
-const creaNuevoPost = (method,data,url) =>{
-    //console.log("entro a la funcion creaNuevoPost")
-   // console.log("Metodo enviado:", method)
-   // console.log("los datos:", data)
-   // console.log("url enviado:", url)
+const creaNuevoPost = (method, data, url) => {
+  //console.log("entro a la funcion creaNuevoPost")
+  // console.log("Metodo enviado:", method)
+  // console.log("los datos:", data)
+  // console.log("url enviado:", url)
 
-    $.ajax({
-        url: url,
-        method: method,
-        data: JSON.stringify(data),
-      })
-        .done(response => {
-          console.log(response);
-        })
-        .fail(err => {
-          console.log(err);
-          console.log(err.status);
-          console.log(err.statusText);
-          console.log("todo mal");
-        });
+  $.ajax({
+    url: url,
+    method: method,
+    data: JSON.stringify(data),
+  })
+    .done(response => {
+      console.log(response);
+    })
+    .fail(err => {
+      console.log(err);
+      console.log(err.status);
+      console.log(err.statusText);
+      console.log("todo mal");
+    });
 
-        //redirectPage()
-}
+  //redirectPage()
+};
 
-
-const obtenerTags = (method,url)=>{
-  console.log("metodo enviado",method)
-  console.log("url enviado:", url)
-  console.log("entro a la funcion de obtener Tags")
-  let userTagsList ='';
-  let TagsEjemplo = ["phyton","c++","java","develop","ruby"];
+const obtenerTags = (method, url) => {
+  console.log("metodo enviado", method);
+  console.log("url enviado:", url);
+  console.log("entro a la funcion de obtener Tags");
+  let userTagsList = "";
+  let TagsEjemplo = ["phyton", "c++", "java", "develop", "ruby"];
   let elSelect = document.getElementsByClassName(".form-select-tags")[0];
-  for(value in TagsEjemplo){
+  for (value in TagsEjemplo) {
     let optionTag = document.createElement("option1");
     optionTag.text = array[value];
     elSelect.add(option);
   }
-
-}
-
-
-
-
+};
 
 //redireccionar
 const redirectPage = () => {
-    setTimeout(() => {
-      window.location.replace("http://127.0.0.1:5502/index.html");
-    }, 2000);
-  };
-
-
-
-  
+  setTimeout(() => {
+    window.location.replace("http://127.0.0.1:5502/index.html");
+  }, 2000);
+};

@@ -74,9 +74,9 @@ const getTags = (response, path) => {
       tag: valInput,
     });
   } else if (aux !== 0) {
-    alert("esta variable ya esta");
+    alert("Esta tag ya existe, no se puede agregar");
   } else if (valInput === "") {
-    alert("ingresa algo");
+    alert("Campo vacio, ingresar algo");
   }
 };
 

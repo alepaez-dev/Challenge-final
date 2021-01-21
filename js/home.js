@@ -10,14 +10,6 @@ urlPhoto = "https://loremflickr.com/320/240/person";
 
 $(document).ready(() => {
   console.log("entranod a jqury");
-  // baseAllJquery(
-  //   "POST",
-  //   "",
-  //   post_5,
-  //   "",
-  //   "https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/.json",
-  //   ""
-  // );
 
   //poner usuarios
   baseAllJquery("GET", showUsers, "", ".list__usuarios", urlFirebase, "");
@@ -31,6 +23,7 @@ $(document).ready(() => {
     ""
   );
 
+  //actualizar imagen y delete
   $("#articuloss").on("click", ".btn-deletes", function () {
     // Do something on an existent or future .dynamicElement
     // alert($(this).attr("data-id")); // or alert($(this).attr('id'));
