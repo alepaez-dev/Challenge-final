@@ -289,7 +289,7 @@ const printUser = (response, path) => {
                                         <p>Kodemia</p>
                                     </div>
                                     <div class="info">
-                                        <h5>Joined</h5>
+                                        <h5>Date</h5>
                                         <p>${response.dateCreated}</p>
                                     </div>
                                 </div>
