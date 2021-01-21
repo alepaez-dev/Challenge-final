@@ -74,9 +74,30 @@ const getTags = (response, path) => {
             tag:valInput
         })
     }else if(aux!==0){
-        alert("esta tag ya existe ingresa otra")
+        /* alert("esta tag ya existe ingresa otra") */
+        swal({
+            title: "Este Tag ya Existe",
+              text: "Este campo Debe contener Algo",
+              type: "warning",
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Aceptar',
+              cancelButtonText: "Cancelar"
+            });
     }else if(valInput===""){
-        alert("ingresa algo en el campo")
+        /* alert("ingresa algo en el campo") */
+        swal({
+            title: "Ingresa un Tag",
+              text: "Este campo Debe contener Algo",
+              type: "warning",
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Aceptar',
+              cancelButtonText: "Cancelar"
+            });
+       
     }
 
 };
@@ -87,67 +108,15 @@ let urlDb = "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json"
 $(document).ready(function () {
     $(".btnJs").click(function () {
 
-<<<<<<< HEAD
-            console.log("boton presionado")
-            let valInput = $("#tagname").val()
-
-
-
-            let options = {
-                method: "GET"
-            }
-            fetch("https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json", options)
-                .then(response => {
-                    return response.json() //si el servidor si envia respuesta afirma
-                })
-                .then(path => {
-                    console.log(path) //imprime la respuesta del objeto mas abajo como los usuarios
-                    //puedes ejecutar funciones
-                }).catch(err => {
-                    console.log(err) //si no se ejecuta el .then
-                })
-
-            let arrayTags = [];
-
-            Object.keys(response).forEach((key, index) => {
-                let tag = response[key].tag;
-                console.log("response tag:", response[key].tag);
-
-                //agregando cada tag al arreglo
-                arrayTags[index] = tag;
-
-                console.log("path", path);
-                console.log("tag: ", tag);
-                $(path).append(`<a href="#">#${tag}</a>`);
-            });
-            console.log("arrayTags: ", arrayTags)
-    }
-
-        /* if (valInput === tag_array) {
-            console.log("tag repetido")
-        } else {
-            if (valInput !== "") {
-                createTag({
-                    tag: valInput
-                })
-                console.log(valInput)
-            }
-        } */
-        if (valInput !== "") {
-=======
         console.log("boton presionado")
         let valInput = $("#tagname").val()
         baseAllJquery("GET",getTags, "", "", urlDb, "")
         /* if (valInput !== "") {
->>>>>>> develop
             createTag({
                 tag: valInput
             })
             console.log(valInput)
-<<<<<<< HEAD
-=======
         } */
->>>>>>> develop
 
 
 
