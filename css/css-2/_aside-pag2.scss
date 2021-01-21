@@ -1,38 +1,37 @@
-.asideDerecha-Pag2-lista{
-    background-color: whitesmoke;
-   width: 95%;
-   margin: auto;
-   margin-top: 20px;
+.asideDerecha-Pag2-lista {
+  background-color: whitesmoke;
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
 }
-.section-lista-aside-pag2{
-    border-top:1px solid whitesmoke;
-}
-
-.asideDerecha-Pag2-lista .section-lista-aside-pag2 .lista-ul{
-    list-style-type: none;
-}
-.lista-li{
-    
-    list-style-type: none;
-    padding: 20px;
-}
-.tam-letra{
-    font-size: 20px;
-    font-weight: bold;
+.section-lista-aside-pag2 {
+  border-top: 1px solid whitesmoke;
 }
 
-.article{
-    padding-left: 15px;
+.asideDerecha-Pag2-lista .section-lista-aside-pag2 .lista-ul {
+  list-style-type: none;
 }
-.lista-ul .lista-li-aside-2{
-border-radius: 5px;
-border: 1px solid rgba(218, 217, 217, 0.63);
-&:hover{
+.lista-li {
+  list-style-type: none;
+  padding: 20px;
+}
+.tam-letra {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.article {
+  padding-left: 15px;
+}
+.lista-ul .lista-li-aside-2 {
+  border-radius: 5px;
+  border: 1px solid rgba(218, 217, 217, 0.63);
+  &:hover {
     background-color: white;
-}
+  }
 
-    .article {
-        margin: 5px;
-        text-align: center;
-    }
+  .article {
+    margin: 5px;
+    text-align: center;
+  }
 }

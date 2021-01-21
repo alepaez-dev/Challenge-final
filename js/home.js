@@ -13,7 +13,7 @@ $(document).ready(() => {
   // baseAllJquery(
   //   "POST",
   //   "",
-  //   post_4,
+  //   post_5,
   //   "",
   //   "https://retofrontend-81a79-default-rtdb.firebaseio.com/posts/.json",
   //   ""
@@ -26,20 +26,10 @@ $(document).ready(() => {
     "GET",
     getTags,
     "",
-    ".container__tags",
+    ".tags_container",
     "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json",
     ""
   );
-
-  // //poner tags en tags
-  // baseAllJquery(
-  //   "GET",
-  //   getTags,
-  //   "",
-  //   ".tags_container",
-  //   "https://retofrontend-81a79-default-rtdb.firebaseio.com/tags/.json",
-  //   ""
-  // );
 
   $("#articuloss").on("click", ".btn-deletes", function () {
     // Do something on an existent or future .dynamicElement

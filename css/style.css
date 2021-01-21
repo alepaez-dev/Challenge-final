@@ -196,6 +196,7 @@ body hr {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 100%;
 }
 
 .seccion-main .imagen-main .imagen-principal {
@@ -230,8 +231,9 @@ body hr {
 }
 
 .seccion-main .article-main .iconos-article .icono-article {
-  width: 40px;
-  border-radius: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 80%;
 }
 
 .seccion-main .article-main .article-info {

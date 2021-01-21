@@ -1,182 +1,152 @@
 header {
+  background-color: white;
+  padding-bottom: 10px;
 
+  .container {
+    background-color: white;
 
+    nav {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
 
+      ul {
+        padding-right: 15px;
+        display: flex;
+        padding-top: 10px;
+        background-color: white;
+
+        li {
+          a {
+            padding: 5px;
+            width: 1px;
+            height: 1px;
+            visibility: hidden;
+          }
+
+          background-color: white;
+          img:hover {
+            box-shadow: black;
+            margin: 10px 5px 0 5px;
+            background-color: white;
+          }
+          img {
+            margin: 10px 5px 0 5px;
+            background-color: white;
+          }
+          img#dropdownMenuButton {
+            border-radius: 50px;
+            width: 30px;
+          }
+
+          img.redondeado {
+            margin-top: 7px;
+            height: 30px;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+
+    section {
+      display: flex;
+      padding-top: 10px;
+      background-color: white;
+      width: 55%;
+
+      input:hover {
+        border: 1px solid rgb(161, 161, 161);
+        background-color: rgb(251, 251, 251);
+        margin: 2px 0 0 15px;
+        padding-left: 5px;
+      }
+
+      input {
+        background-color: rgb(251, 251, 251);
+        margin: 2px 0 0 15px;
+        padding-left: 5px;
+        width: 80%;
+      }
+    }
+  }
+}
+header.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
     background-color: white;
     padding-bottom: 10px;
 
     .container {
+      background-color: white;
+
+      nav {
         background-color: white;
+        display: flex;
+        justify-content: space-between;
 
-        nav {
+        ul {
+          padding-top: 10px;
+          background-color: white;
+
+          li {
+            a {
+              font-weight: bold;
+              margin-top: 2px;
+              text-align: center;
+              width: 140px;
+              height: 35px;
+              visibility: visible;
+            }
 
             background-color: white;
-            display: flex;
-            justify-content: space-between;
 
-            ul {
-                padding-right: 15px;
-                display: flex;
-                padding-top: 10px;
-                background-color: white;
-
-                li {
-                    a {
-                        padding: 5px;
-                        width: 1px;
-                        height: 1px;
-                        visibility: hidden;
-
-                    }
-
-                    background-color: white;
-                    img:hover {
-                        box-shadow: black;
-                        margin: 10px 5px 0 5px;
-                        background-color: white;
-                    }
-                    img {
-                        margin: 10px 5px 0 5px;
-                        background-color: white;
-                    }
-                    img#dropdownMenuButton {
-                        border-radius: 50px;
-                        width: 30px;
-                        
-                    }
-
-                    img.redondeado {
-
-                        margin-top: 7px;
-                        height: 30px;
-                        border-radius: 100%;
-                    }
-
-
-                }
+            img {
+              margin: 10px 5px 0 5px;
+              background-color: white;
             }
+
+            img.redondeado {
+              margin-top: 7px;
+              height: 30px;
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+
+      section {
+        display: flex;
+        padding-top: 10px;
+        background-color: white;
+        width: 60%;
+
+        input:hover {
+          border: 1px solid rgb(161, 161, 161);
+          background-color: rgb(251, 251, 251);
+          margin: 2px 0 0 15px;
+          padding-left: 5px;
         }
 
-        section {
-            display: flex;
-            padding-top: 10px;
-            background-color: white;
-            width: 55%;
-
-            input:hover {
-                border: 1px solid rgb(161, 161, 161);
-                background-color: rgb(251, 251, 251);
-                margin: 2px 0 0 15px;
-                padding-left: 5px;
-
-
-            }
-
-            input {
-
-                background-color: rgb(251, 251, 251);
-                margin: 2px 0 0 15px;
-                padding-left: 5px;
-                width: 80%;
-
-            }
+        input {
+          background-color: rgb(251, 251, 251);
+          margin: 2px 0 0 15px;
+          padding-left: 5px;
+          width: 80%;
         }
-
+      }
     }
-    
+  }
 
-}
-header.sticky {
+  header.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 4;
-    
-}
-
-@media only screen and (min-width:768px) {
-    header {
-
-
-        background-color: white;
-        padding-bottom: 10px;
-
-        .container {
-            background-color: white;
-
-            nav {
-
-                background-color: white;
-                display: flex;
-                justify-content: space-between;
-
-                ul {
-                    padding-top: 10px;
-                    background-color: white;
-
-                    li {
-                        a {
-                            font-weight: bold;
-                            margin-top: 2px;
-                            text-align: center;
-                            width: 140px;
-                            height: 35px;
-                            visibility: visible;
-                        }
-
-                        background-color: white;
-
-                        img {
-                            margin: 10px 5px 0 5px;
-                            background-color: white;
-                        }
-
-                        img.redondeado {
-                            margin-top: 7px;
-                            height: 30px;
-                            border-radius: 100%;
-                        }
-
-
-                    }
-                }
-            }
-
-            section {
-                display: flex;
-                padding-top: 10px;
-                background-color: white;
-                width: 60%;
-
-                input:hover {
-                    border: 1px solid rgb(161, 161, 161);
-                    background-color: rgb(251, 251, 251);
-                    margin: 2px 0 0 15px;
-                    padding-left: 5px;
-
-
-                }
-
-                input {
-
-                    background-color: rgb(251, 251, 251);
-                    margin: 2px 0 0 15px;
-                    padding-left: 5px;
-                    width: 80%;
-
-                }
-            }
-
-        }
-
-    }
-
-    header.sticky {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        z-index: 4;
-        
-    }
-
+  }
 }
